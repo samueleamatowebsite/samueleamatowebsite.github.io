@@ -1,0 +1,131 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Weird</title>
+    <style type="text/css">
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            background-size: cover;
+        }
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.7); /* Nero trasparente */
+            z-index: 0;
+        }
+        img.profile {
+            width: 10em;
+            float: left;
+            padding: 1em;
+            z-index: 1;
+        }
+        h2 {
+            padding: 0;
+            margin: 0;
+            z-index: 1;
+        }
+        ul {
+            list-style: none;
+            margin: 0;
+            padding: 0.5em;
+        }
+        li {
+            margin: 0;
+            padding: 0.1em;
+        }
+        .thumbnail {
+            float: left;
+            clear: both;
+            margin: 0 1em 2em 0;
+            padding: 0;
+        }
+        .jam {
+            clear: both;
+        }
+        @media (prefers-color-scheme: dark) {
+            body {
+                background-color: black;
+                color: white;
+            }
+            .dark {
+                display: block;
+            }
+            .light {
+                display: none;
+            }
+        }
+        @media (prefers-color-scheme: light) {
+            body {
+                background-color: white;
+                color: black;
+            }
+        }
+        a {
+            color: #6377B8; /* Imposta il colore degli hyperlink su blu chiaro */
+        }
+    </style>
+</head>
+<body>
+    <div class="overlay"></div>
+    <div style="max-width: 42em; margin: 0; padding: 0; position: relative; z-index: 1;">
+        <img class="profile light" alt="Bright profile picture of Weird" src="images/light.png">
+        <img class="profile dark" alt="Dark profile picture of Weird" src="images/dark.jpg">
+        <h1 style="margin: 0; padding: 0.3em 0 0 0">Work In Progress's blog</h1>
+        <p>Work In Progress.</p>
+        <p>
+            <a href="https://github.com/rdwei/">GitHub</a> |
+            <a href="https://discord.gg/m4madyG7jp">Discord</a> |
+            <a href="">Support me</a>
+        </p>
+    </div>
+
+    <div style="clear:both; float:left; padding: 1em; position: relative; z-index: 1;">
+        <!-- START POST-->
+        <h2>Posts</h2>
+        <ul>
+            <li>2024 June 11 - <a href="post/trying-to-create-an-example-post.html">Trying to create an example post</a></li>
+            <li>2024 July 01 - <a href="post/my-experience-with-psp-development.html">My Experience with PSP Development</a></li>
+        </ul>
+    </div>
+    <!-- END POST -->
+
+    <div style="float: left; max-width: 34em; position: relative; z-index: 1;">
+        <!-- START PROJECTS-->
+        <h2>Projects</h2>
+        <ul>
+            <li><a href="https://github.com/rdwei/C-rypt">C-rypt</a> - Easy-to-Use Steganography tool entirely written in C.</li>
+            <li><a href="https://github.com/rdwei/mousice">mousice</a> - Suckless CLI YouTube-Music Player.</li>
+            <li><a href="https://github.com/rdwei/exaphisher">ExaPhisher</a> - Social Media Phishing Suite written in Python and Php.</li>
+            <li><a href="https://github.com/rdwei/lawliet">Lawliet</a> - Osint tool to track down social media profiles using a specific username across multiple social network platforms.</li>
+            <li><a href="https://github.com/rdwei/osinttube">OsintTube</a> - An Easy-to-Use YouTube OSINT Tool.</li>
+            <li><a href="https://github.com/rdwei/UMusic">UMusic</a> - A feature-rich, lightweight PSP music player.</li>
+            <li><a href="https://github.com/rdwei/discdoor">DiscDoor</a> - An Easy-to-Use Discord-Based Backdoor Tool.</li>
+            <li><a href="https://github.com/rdwei/socialmediahackingtoolki">SocialMediaHackingToolkit</a> - Social Media Hacking Suite. (archived)</li>
+        </ul>
+        <!-- END PROJECTS-->
+    </div>
+
+    <script>
+        // Array delle immagini di sfondo
+        const images = [
+            'backgrounds/1.jpg',
+            'backgrounds/2.jpg',
+            'backgrounds/3.jpg'
+            // Aggiungi altre immagini qui
+        ];
+
+        // Seleziona un'immagine casuale
+        const randomImage = images[Math.floor(Math.random() * images.length)];
+
+        // Imposta l'immagine di sfondo
+        document.body.style.backgroundImage = `url('${randomImage}')`;
+    </script>
+</body>
+</html>
+
