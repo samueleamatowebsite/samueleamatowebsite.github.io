@@ -10,16 +10,18 @@
             padding: 0;
             height: 100%;
             background-size: cover;
-            background-color: black; /* Dark background */
+            background-attachment: fixed; /* Mantiene lo sfondo fermo */
+            background-repeat: no-repeat; /* Non ripete l'immagine */
+            background-position: center; /* Centra l'immagine */
             color: white; /* Light text */
         }
         .overlay {
-            position: absolute;
+            position: fixed; /* Modificato da absolute a fixed */
             top: 0;
             left: 0;
             width: 100%;
             height: 100%;
-            background-color: rgba(0, 0, 0, 0.7);
+            background-color: rgba(0, 0, 0, 0.7); /* Nero opaco */
             z-index: 0;
         }
         img.profile {
@@ -98,7 +100,35 @@
             <li><a href="https://github.com/rdwei/discdoor">DiscDoor</a> - An Easy-to-Use Discord-Based Backdoor Tool.</li>
             <li><a href="https://github.com/rdwei/socialmediahackingtoolkit">SocialMediaHackingToolkit</a> - Social Media Hacking Suite. (archived)</li>
         </ul>
+
         <!-- END PROJECTS-->
+
+        <!-- START SOFTWARE I USE-->
+        <h2>Software I use</h2>
+        <div style="margin: 1em 0;">
+            <div style="font-weight: bold; padding-left: 10px;">Operating System/Distribution</div>
+            <div style="padding-left: 40px;">I use <a href="https://voidlinux.org/">Void Linux</a>, which is a minimalist distribution that utilizes runit for its init system and xbps as its package manager. You can read my opinion on Void Linux <a href="">here</a>.</div>
+        </div>
+
+        <div style="margin: 1em 0;">
+            <div style="font-weight: bold; padding-left: 10px;">Terminal</div>
+            <div style="padding-left: 40px;">I use <a href="https://alacritty.org/">Alacritty</a>, a fast, GPU-accelerated terminal emulator known for its simplicity and high performance. Its configuration is straightforward, making customization easy.</div>
+        </div>
+
+        <div style="margin: 1em 0;">
+            <div style="font-weight: bold; padding-left: 10px;">Window Manager/Desktop Environment</div>
+            <div style="padding-left: 40px;"><a href="https://dwm.suckless.org/">dwm</a> from <a href="https://www.suckless.org">suckless.org</a>, a super-fast and minimalist window manager. For my status bar, I use dwmblocks. To run my builds of dwm and dwmblocks, you'll need to install libxft-bgra until the patch is merged upstream.</div>
+        </div>
+
+        <div style="margin: 1em 0;">
+            <div style="font-weight: bold; padding-left: 10px;">Text editing and programming</div>
+            <div style="padding-left: 40px;"><a href="https://neovim.io/">Neovim</a> serves as my text editor due to its high customizability, lightweight design, and excellent plugin support. It boosts productivity with features like asynchronous editing and a modern interface.</div>
+        </div>
+
+        <div style="margin: 1em 0;">
+            <div style="font-weight: bold; padding-left: 10px;">Web Browsing</div>
+            <div style="padding-left: 40px;">I use <a href="https://www.mozilla.org/firefox/">Firefox</a> as my web browser, enhanced with the user script <a href="https://github.com/yokoffing/BetterFox">BetterFox</a>. This setup improves privacy and customizes my browsing experience.</div>
+        </div>
     </div>
 
     <script>
