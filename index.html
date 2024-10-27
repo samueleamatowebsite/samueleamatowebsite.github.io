@@ -10,6 +10,8 @@
             padding: 0;
             height: 100%;
             background-size: cover;
+            background-color: black; /* Dark background */
+            color: white; /* Light text */
         }
         .overlay {
             position: absolute;
@@ -17,7 +19,7 @@
             left: 0;
             width: 100%;
             height: 100%;
-            background-color: rgba(0, 0, 0, 0.7); /* Nero trasparente */
+            background-color: rgba(0, 0, 0, 0.7);
             z-index: 0;
         }
         img.profile {
@@ -26,7 +28,7 @@
             padding: 1em;
             z-index: 1;
         }
-        h2 {
+        h1, h2 {
             padding: 0;
             margin: 0;
             z-index: 1;
@@ -49,31 +51,13 @@
         .jam {
             clear: both;
         }
-        @media (prefers-color-scheme: dark) {
-            body {
-                background-color: black;
-                color: white;
-            }
-            .dark {
-                display: block;
-            }
-            .light {
-                display: none;
-            }
-        }
-        @media (prefers-color-scheme: light) {
-            body {
-                background-color: white;
-                color: black;
-            }
-        }
         a {
-            color: #6377B8; /* Imposta il colore degli hyperlink su blu chiaro */
+            color: #6377B8; /* Light blue link color */
         }
-        @media (max-width: 1000px) { /* Adjust this width as needed for your layout */
+        @media (max-width: 1000px) { /* Responsive design */
             .posts, .projects {
-                padding-left: 1em; /* Same padding for both sections */
-                padding-right: 1em; /* Optional: add some padding on the right for consistency */
+                padding-left: 1em;
+                padding-right: 1em;
             }
         }
     </style>
@@ -81,8 +65,7 @@
 <body>
     <div class="overlay"></div>
     <div style="max-width: 42em; margin: 0; padding: 0; position: relative; z-index: 1;">
-        <img class="profile light" alt="Bright profile picture of Weird" src="images/light.png">
-        <img class="profile dark" alt="Dark profile picture of Weird" src="images/dark.jpg">
+        <img class="profile" alt="Dark profile picture of Weird" src="images/dark.jpg">
         <h1 style="margin: 0; padding: 0.3em 0 0 0">Samuele Amato's Webpage</h1>
         <p>There’s a lot here, so thanks for stopping by!</p>
         <p>
@@ -119,18 +102,18 @@
     </div>
 
     <script>
-        // Array delle immagini di sfondo
+        // Array of background images
         const images = [
             'backgrounds/1.jpg',
             'backgrounds/2.jpg',
             'backgrounds/3.jpg'
-            // Aggiungi altre immagini qui
+            // Add more images here
         ];
 
-        // Seleziona un'immagine casuale
+        // Select a random image
         const randomImage = images[Math.floor(Math.random() * images.length)];
 
-        // Imposta l'immagine di sfondo
+        // Set the background image
         document.body.style.backgroundImage = `url('${randomImage}')`;
     </script>
 </body>
