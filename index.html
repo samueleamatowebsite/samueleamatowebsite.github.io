@@ -70,6 +70,12 @@
         a {
             color: #6377B8; /* Imposta il colore degli hyperlink su blu chiaro */
         }
+        @media (max-width: 768px) { /* Adjust this width as needed for your layout */
+            .posts, .projects {
+                padding-left: 1em; /* Same padding for both sections */
+                padding-right: 1em; /* Optional: add some padding on the right for consistency */
+            }
+        }
     </style>
 </head>
 <body>
@@ -86,7 +92,7 @@
         </p>
     </div>
 
-    <div style="clear:both; float:left; padding: 1em; position: relative; z-index: 1;">
+    <div class="posts" style="clear:both; float:left; padding: 1em; position: relative; z-index: 1;">
         <!-- START POST-->
         <h2>Posts</h2>
         <ul>
@@ -96,7 +102,7 @@
     </div>
     <!-- END POST -->
 
-    <div style="float: left; max-width: 34em; position: relative; z-index: 1;">
+    <div class="projects" style="float: left; max-width: 34em; position: relative; z-index: 1;">
         <!-- START PROJECTS-->
         <h2>Projects</h2>
         <ul>
