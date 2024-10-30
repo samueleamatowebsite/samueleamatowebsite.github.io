@@ -1,153 +1,28 @@
-<!doctype html>
 <html>
-<head>
+  <head>
     <meta charset="utf-8">
     <title>Samu's Webpage</title>
-    <link rel="icon" type="image/png" href="favicon.png">
-    <style type="text/css">
-        body, html {
-            margin: 0;
-            padding: 0;
-            height: 100%;
-            background-size: cover;
-            background-attachment: fixed; /* Mantiene lo sfondo fermo */
-            background-repeat: no-repeat; /* Non ripete l'immagine */
-            background-position: center; /* Centra l'immagine */
-            color: white; /* Light text */
-        }
-        .overlay {
-            position: fixed; /* Modificato da absolute a fixed */
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background-color: rgba(0, 0, 0, 0.7); /* Nero opaco */
-            z-index: 0;
-        }
-        img.profile {
-            width: 10em;
-            float: left;
-            padding: 1em;
-            z-index: 1;
-        }
-        h1, h2 {
-            padding: 0;
-            margin: 0;
-            z-index: 1;
-        }
-        ul {
-            list-style: none;
-            margin: 0;
-            padding: 0.5em;
-        }
-        li {
-            margin: 0;
-            padding: 0.1em;
-        }
-        .thumbnail {
-            float: left;
-            clear: both;
-            margin: 0 1em 2em 0;
-            padding: 0;
-        }
-        .jam {
-            clear: both;
-        }
-        a {
-            color: #6377B8; /* Light blue link color */
-        }
-        @media (max-width: 1000px) { /* Responsive design */
-            .posts, .projects {
-                padding-left: 1em;
-                padding-right: 1em;
-            }
-        }
-    </style>
-</head>
-<body>
-    <div class="overlay"></div>
-    <div style="max-width: 42em; margin: 0; padding: 0; position: relative; z-index: 1;">
-        <img class="profile" alt="Dark profile picture of Weird" src="images/dark.jpg">
-        <h1 style="margin: 0; padding: 0.3em 0 0 0">Samuele Amato's Webpage</h1>
-        <p>There’s a lot here, so thanks for stopping by!</p>
-        <p>
-            <a href="https://github.com/rdwei/">GitHub</a> |
-            <a href="https://discord.gg/m4madyG7jp">Discord</a> |
-            <a href="">Support me</a>
-        </p>
+    <link rel="icon" type="image/gif" href="images/favicon.gif">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+
+  <body>
+
+    <div style="width: 100%; text-align: center;">
+      <img src="images/title.gif" style="padding: 30px 10px 30px 10px">
     </div>
 
-    <div class="posts" style="clear:both; float:left; padding: 1em; position: relative; z-index: 1;">
-        <!-- START POST-->
-        <h2>Posts</h2>
-        <ul>
-            <li>2024 June 11 - <a href="post/trying-to-create-an-example-post">Trying to create an example post</a></li>
-            <li>2024 July 01 &nbsp;- <a href="post/my-experience-with-psp-development">My Experience with PSP Development</a></li>
-        </ul>
-    </div>
-    <!-- END POST -->
-
-    <div class="projects" style="float: left; max-width: 34em; position: relative; z-index: 1;">
-        <!-- START PROJECTS-->
-        <h2>Projects</h2>
-        <ul>
-            <li><a href="https://github.com/rdwei/C-rypt">C-rypt</a> - Easy-to-Use Steganography tool entirely written in C.</li>
-            <li><a href="https://github.com/rdwei/mousice">mousice</a> - Suckless CLI YouTube-Music Player.</li>
-            <li><a href="https://github.com/rdwei/exaphisher">ExaPhisher</a> - Social Media Phishing Suite written in Python and Php.</li>
-            <li><a href="https://github.com/rdwei/lawliet">Lawliet</a> - Osint tool to track down social media profiles using a specific username across multiple social network platforms.</li>
-            <li><a href="https://github.com/rdwei/osinttube">OsintTube</a> - An Easy-to-Use YouTube OSINT Tool.</li>
-            <li><a href="https://github.com/rdwei/UMusic">UMusic</a> - A feature-rich, lightweight PSP music player.</li>
-            <li><a href="https://github.com/rdwei/discdoor">DiscDoor</a> - An Easy-to-Use Discord-Based Backdoor Tool.</li>
-            <li><a href="https://github.com/rdwei/socialmediahackingtoolkit">SocialMediaHackingToolkit</a> - Social Media Hacking Suite. (archived)</li>
-        </ul>
-
-        <!-- END PROJECTS-->
-
-      <br>
-
-        <!-- START SOFTWARE I USE-->
-        <h2>Software I use</h2>
-        <div style="margin: 1em 0;">
-            <div style="font-weight: bold; padding-left: 10px;">Operating System/Distribution</div>
-            <div style="padding-left: 40px;">I use <a href="https://voidlinux.org/">Void Linux</a>, which is a minimalist distribution that utilizes runit for its init system and xbps as its package manager. You can read my opinion on Void Linux <a href="">here</a>.</div>
-        </div>
-
-        <div style="margin: 1em 0;">
-            <div style="font-weight: bold; padding-left: 10px;">Terminal</div>
-            <div style="padding-left: 40px;">I use <a href="https://alacritty.org/">Alacritty</a>, a fast, GPU-accelerated terminal emulator known for its simplicity and high performance. Its configuration is straightforward, making customization easy.</div>
-        </div>
-
-        <div style="margin: 1em 0;">
-            <div style="font-weight: bold; padding-left: 10px;">Window Manager/Desktop Environment</div>
-            <div style="padding-left: 40px;"><a href="https://dwm.suckless.org/">dwm</a> from <a href="https://www.suckless.org">suckless.org</a>, a super-fast and minimalist window manager. For my status bar, I use dwmblocks. To run my builds of dwm and dwmblocks, you'll need to install libxft-bgra until the patch is merged upstream.</div>
-        </div>
-
-        <div style="margin: 1em 0;">
-            <div style="font-weight: bold; padding-left: 10px;">Text editing and programming</div>
-            <div style="padding-left: 40px;"><a href="https://neovim.io/">Neovim</a> serves as my text editor due to its high customizability, lightweight design, and excellent plugin support. It boosts productivity with features like asynchronous editing and a modern interface.</div>
-        </div>
-
-        <div style="margin: 1em 0;">
-            <div style="font-weight: bold; padding-left: 10px;">Web Browsing</div>
-            <div style="padding-left: 40px;">I use <a href="https://www.mozilla.org/firefox/">Firefox</a> as my web browser, enhanced with the user script <a href="https://github.com/yokoffing/BetterFox">BetterFox</a>. This setup improves privacy and customizes my browsing experience.</div>
-        </div>
-    </div>
+    <audio id="audio" src="audio/aero.mp3" preload="auto"></audio>
 
     <script>
-        // Array of background images
-        const images = [
-            'backgrounds/1.jpg',
-            'backgrounds/2.jpg',
-            'backgrounds/3.jpg'
-            // Add more images here
-        ];
+        const audio = document.getElementById('audio');
 
-        // Select a random image
-        const randomImage = images[Math.floor(Math.random() * images.length)];
-
-        // Set the background image
-        document.body.style.backgroundImage = `url('${randomImage}')`;
+        document.body.addEventListener('click', () => {
+            audio.currentTime = 0; // Riavvolgi l'audio all'inizio
+            audio.play(); // Avvia la riproduzione dell'audio
+        });
     </script>
-</body>
-</html>
 
+  </body>
+
+</html>
