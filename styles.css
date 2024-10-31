@@ -55,6 +55,8 @@ body {
   display: flex;
   flex-direction: column;
   gap: 12px;
+  margin: 20px 0;
+  margin-top: 0px;
 }
 
 .gif-container2 {
@@ -64,6 +66,8 @@ body {
   display: flex;
   flex-direction: column;
   gap: 12px;
+  margin: 20px 0;
+  margin-top: 0px;
 }
 
 .gif-item {
@@ -71,3 +75,72 @@ body {
   height: auto;
 }
 
+.centered-title {
+  display: flex;
+  flex-direction: column; /* Aggiungi questa riga per il sottotitolo sotto il titolo */
+  justify-content: center;
+  align-items: center;
+  margin: 0 400px 0 400px; /* Margine superiore e inferiore per separare dal contenuto */
+  color: white;
+  text-align: left;
+}
+
+.centered-text {
+  display: flex;
+  flex-direction: column; /* Aggiungi questa riga per il sottotitolo sotto il titolo */
+  justify-content: center;
+  align-items: center;
+  margin: 0 400px 0 394px; /* Margine superiore e inferiore per separare dal contenuto */
+  color: white;
+  text-align: left;
+}
+
+.title {
+  margin-bottom: 10px; /* Spazio sotto il titolo */
+}
+
+.subtitle {
+  font-family: 'Pixelify Sans', sans-serif; /* Usa Pixelify Sans invece di Inter */
+  font-size: 22px; /* Dimensione del font per il sottotitolo */
+  text-align: left; /* Centra il sottotitolo */
+  margin: 0; /* Rimuove margini non necessari */
+}
+
+a {
+  color: #FFFF00; /* Colore giallo */
+  text-decoration: ; /* Rimuove la sottolineatura */
+}
+
+a:hover {
+  text-decoration: underline; /* Aggiunge la sottolineatura quando il mouse passa sopra */
+}
+.centered-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 400px;
+  color: white;
+  text-align: left;
+}
+
+.projects-container {
+  display: flex;
+  flex-direction: column; /* Mantieni le liste in verticale */
+  margin-bottom: 20px; /* Spazio tra le sezioni */
+}
+
+.subtitle {
+  font-family: 'Pixelify Sans', sans-serif;
+  font-size: 22px;
+  text-align: left;
+  margin: 0;
+}
+
+.project-section {
+  display: flex;
+  justify-content: space-between; /* Allinea gli elementi a sinistra e destra */
+}
+
+ul {
+  padding-left: 20px; /* Margine a sinistra per le liste */
+}
