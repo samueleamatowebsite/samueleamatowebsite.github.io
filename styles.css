@@ -24,8 +24,18 @@ body {
   left: 10px; /* Regola la distanza da sinistra */
   display: flex;
   flex-direction: column; /* Allinea le GIF in colonna */
-  gap: 20px; /* Distanza di 20px tra le GIF */
+  gap: 12px; /* Distanza di 20px tra le GIF */
 }
+
+.gif-container2 {
+  position: absolute; /* Cambiato da absolute a relative */
+  top: 20px; /* Regola la distanza dall'alto se necessario */
+  left: 118px; /* Regola la distanza da sinistra */
+  display: flex;
+  flex-direction: column; /* Allinea le GIF in colonna */
+  gap: 12px; /* Distanza di 20px tra le GIF */
+}
+
 
 .gif-item {
   width: 100px; /* Imposta una larghezza fissa per le GIF */
