@@ -17,28 +17,57 @@ body {
   padding: 0;
 }
 
+/* Pulsante Home */
+.home-button {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  padding: 5px 10px;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  color: #4CAF50;
+  background-color: black;
+  border: 2px solid #4CAF50;
+  text-decoration: none;
+  transition: background-color 0.3s;
+}
+
+.home-button:hover {
+  background-color: #4CAF50;
+  color: black;
+}
+
+/* Stili per l'indirizzo del wallet */
+.wallet-address {
+  font-size: 14px;
+  font-family: Arial, sans-serif;
+  color: #4CAF50;
+  word-break: break-word;
+  text-align: center;
+  max-width: 180px;
+}
+
 /* Nuovi stili per il contenitore delle GIF */
 .gif-container {
-  position: absolute; /* Cambiato da absolute a relative */
-  top: 20px; /* Regola la distanza dall'alto se necessario */
-  left: 10px; /* Regola la distanza da sinistra */
+  position: absolute;
+  top: 20px;
+  left: 10px;
   display: flex;
-  flex-direction: column; /* Allinea le GIF in colonna */
-  gap: 12px; /* Distanza di 20px tra le GIF */
+  flex-direction: column;
+  gap: 12px;
 }
 
 .gif-container2 {
-  position: absolute; /* Cambiato da absolute a relative */
-  top: 20px; /* Regola la distanza dall'alto se necessario */
-  left: 118px; /* Regola la distanza da sinistra */
+  position: absolute;
+  top: 20px;
+  left: 118px;
   display: flex;
-  flex-direction: column; /* Allinea le GIF in colonna */
-  gap: 12px; /* Distanza di 20px tra le GIF */
+  flex-direction: column;
+  gap: 12px;
 }
 
-
 .gif-item {
-  width: 100px; /* Imposta una larghezza fissa per le GIF */
-  height: auto; /* Mantiene il rapporto di aspetto */
+  width: 100px;
+  height: auto;
 }
 
