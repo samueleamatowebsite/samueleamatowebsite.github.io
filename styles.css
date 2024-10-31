@@ -3,3 +3,32 @@ body {
   margin: 0;
   padding: 0;
 }
+
+#music-toggle {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  width: 47px;
+  height: 47px;
+  background-image: url('images/audio_muted.png');
+  background-size: cover;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+}
+
+/* Nuovi stili per il contenitore delle GIF */
+.gif-container {
+  position: absolute; /* Cambiato da absolute a relative */
+  top: 20px; /* Regola la distanza dall'alto se necessario */
+  left: 10px; /* Regola la distanza da sinistra */
+  display: flex;
+  flex-direction: column; /* Allinea le GIF in colonna */
+  gap: 20px; /* Distanza di 20px tra le GIF */
+}
+
+.gif-item {
+  width: 100px; /* Imposta una larghezza fissa per le GIF */
+  height: auto; /* Mantiene il rapporto di aspetto */
+}
+

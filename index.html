@@ -12,17 +12,34 @@
       <img src="images/title.gif" style="padding: 30px 10px 30px 10px">
     </div>
 
-    <audio id="audio" src="audio/aero.mp3" preload="auto"></audio>
+    <button id="music-toggle" onclick="toggleMusic()"></button>
+    <audio id="background-music" src="audio/aero.mp3"></audio>
+
+    <!-- Nuovo div per le GIF -->
+    <div class="gif-container">
+      <a href="https://www.vim.org/"><img src="images/8831/vim.gif" alt="GIF 1" class="gif-item"></a>
+      <a href="https://www.youtube.com/watch?v=OF_5EKNX0Eg"><img src="images/8831/fyn.gif" alt="GIF 1" class="gif-item"></a>
+      <a href="https://www.kernel.org"><img src="images/8831/linux.gif" alt="GIF 1" class="gif-item"></a>
+      <a href="https://www.getmonero.org"><img src="images/8831/orange.jpg" alt="GIF 1" class="gif-item"></a>
+    </div>
 
     <script>
-        const audio = document.getElementById('audio');
+      let isPlaying = false;
+      const musicToggleButton = document.getElementById('music-toggle');
+      const backgroundMusic = document.getElementById('background-music');
 
-        document.body.addEventListener('click', () => {
-            audio.currentTime = 0; // Riavvolgi l'audio all'inizio
-            audio.play(); // Avvia la riproduzione dell'audio
-        });
+      function toggleMusic() {
+        if (isPlaying) {
+          backgroundMusic.pause();
+          musicToggleButton.style.backgroundImage = "url('images/audio_muted.png')";
+        } else {
+          backgroundMusic.play();
+          musicToggleButton.style.backgroundImage = "url('images/audio_unmuted.png')";
+        }
+        isPlaying = !isPlaying;
+      }
     </script>
 
   </body>
-
 </html>
+
