@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library</title>
+    <style>
+        body {
+            background-image: url('images/bg2.png');
+            background-repeat: repeat;
+            font-family: 'Inter', sans-serif;
+            margin: 10;
+            padding: 10px;
+            text-align: center;
+        }
+        .centered-title {
+            margin: 10px 0;
+        }
+        .book-row {
+            display: flex;
+            justify-content: center;
+            align-items: flex-end;
+            margin: 10px;
+        }
+        .book-cover {
+            margin: 10px;
+        }
+        .caption {
+            text-align: center;
+            color: white;
+            font-weight: bold; /* Testo in grassetto */
+        }
+    </style>
+</head>
+<body>
+    <div class="centered-title">
+        <img src="images/library_title.gif" alt="Library Title">
+    </div>
+    
+    <div id="books-container"></div>
+
+    <script>
+        // Array di nomi di file di copertine di libri (da adattare ai tuoi file)
+        const bookCovers = [
+            'Anti tech Revolution.jpg',
+            'The Prince.jpg',
+            'The metamorphosis.jpg',
+            'Industrial Society and Its Future.jpg',
+            'The power of habits.jpg',
+            'Il maestro e margherita.jpg'
+        ];
+        
+        // Ordinare i titoli in ordine alfabetico
+        bookCovers.sort();
+
+        // Contenitore per le righe di libri
+        const booksContainer = document.getElementById('books-container');
+
+        // Creare le righe di copertine di libri
+        for (let i = 0; i < bookCovers.length; i += 3) {
+            const row = document.createElement('div');
+            row.className = 'book-row';
+
+            for (let j = 0; j < 3; j++) {
+                if (i + j < bookCovers.length) {
+                    const cover = bookCovers[i + j];
+                    const coverPath = `images/book/${cover}`;
+
+                    const bookDiv = document.createElement('div');
+                    bookDiv.className = 'book-cover';
+
+                    const img = document.createElement('img');
+                    img.src = coverPath;
+                    img.alt = cover;
+                    img.style.width = '250px';
+
+                    const caption = document.createElement('div');
+                    caption.className = 'caption';
+                    caption.textContent = cover.split('.')[0];
+
+                    bookDiv.appendChild(img);
+                    bookDiv.appendChild(caption);
+                    row.appendChild(bookDiv);
+                }
+            }
+            booksContainer.appendChild(row);
+        }
+    </script>
+</body>
+</html>
