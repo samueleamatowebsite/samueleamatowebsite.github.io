@@ -5,24 +5,16 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/samueleamatowebsite/samueleamatowebsite.github.io.git"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "description": "",
-  "devDependencies": {
-    "ts-loader": "^9.5.1",
-    "typescript": "^5.7.2",
-    "webpack": "^5.97.1",
-    "webpack-cli": "^6.0.1",
-    "webpack-dev-server": "^5.2.0"
+  "bugs": {
+    "url": "https://github.com/samueleamatowebsite/samueleamatowebsite.github.io/issues"
   },
-  "dependencies": {
-    "react": "^19.0.0",
-    "react-dom": "^19.0.0"
-  },
-  "scripts": {
-    "start": "webpack serve --mode development --open",
-    "build": "webpack --mode production"
-  }
-
+  "homepage": "https://github.com/samueleamatowebsite/samueleamatowebsite.github.io#readme",
+  "description": ""
 }

@@ -1,17 +1,13 @@
 {
   "compilerOptions": {
     "target": "es5",
-    "lib": ["dom", "es2015"],
-    "allowJs": true,
-    "skipLibCheck": true,
-    "esModuleInterop": true,
-    "module": "esnext",
-    "moduleResolution": "node",
-    "sourceMap": true,
-    "jsx": "react"
+    "module": "es6",
+    "outDir": "./dist",  // La cartella in cui mettere i file compilati
+    "rootDir": "./src",  // La cartella dove metterai i tuoi file TypeScript
+    "strict": true,
+    "esModuleInterop": true
   },
-  "include": [
-    "src/**/*"
-  ]
+  "include": ["src/**/*.ts"],
+  "exclude": ["node_modules"]
 }
 
