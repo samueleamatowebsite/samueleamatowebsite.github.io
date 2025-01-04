@@ -58,4 +58,7 @@ pre {
     display: none;
   }
 }
-
+.special-links a {
+  color: white;
+  text-decoration: underline;
+}
