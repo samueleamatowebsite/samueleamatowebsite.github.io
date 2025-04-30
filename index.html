@@ -2,8 +2,6 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Samuele Amato</title>
     <meta name="description" content="19 y/o low-level dev who loves messing with C and Rust but occasionally dips into other stuff. OSS fan, I also share small projects on GitHub.">
     <meta name="keywords" content="Samuele Amato, GitHub, sviluppatore, portfolio, blog, rdwei, progetti open source, developer, coding">
     <meta name="author" content="Samuele Amato">
@@ -25,11 +23,14 @@
   }
   </script>
 
-img.profile {
-  width: 10em;
+  img.profile {
+  width: 100%; /* La larghezza si adatta al contenitore */
+  max-width: 10em; /* Imposta la larghezza massima a 10em */
+  height: auto; /* Mantieni le proporzioni dell'immagine */
   float: left;
   padding: 1em;
 }
+
 h2 {
   padding: 0;
   margin: 0;
