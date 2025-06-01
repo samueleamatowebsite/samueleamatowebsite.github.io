@@ -1,117 +1,126 @@
 body {
-	background: #1b1b1b ;
-	color: #fff ;
-	margin-bottom: 200px ;
-	font-family: "Garamond", Georgia, serif, 'Noto Color Emoji', 'Apple Color Emoji', 'Segoe UI Emoji' ;
+	background: #282828; /* sfondo scuro caldo */
+	color: #ebdbb2; /* beige chiaro */
+	margin-bottom: 200px;
+	font-family: "Garamond", Georgia, serif, 'Noto Color Emoji', 'Apple Color Emoji', 'Segoe UI Emoji';
 }
 
 h1 {
-	color: chocolate ;
+	color: #fabd2f; /* giallo brillante */
 }
 h2 {
-	color: sandybrown ;
+	color: #fe8019; /* arancione acceso */
 }
 h3 {
-	color: tan ;
+	color: #d79921; /* giallo oro scuro */
 }
 h4 {
-	color: wheat ;
+	color: #bdae93; /* beige/grigio caldo */
 }
-h5, h6 { color: cornsilk ; }
+h5, h6 {
+	color: #a89984; /* grigio caldo */
+}
 
 strong {
-	color: wheat ;
+	color: #bdae93; /* beige/grigio caldo */
 }
 
 a {
-	color: #33bbff ;
-	text-decoration: none ;
+	color: #83a598; /* verde acqua/blu-grigio */
+	text-decoration: none;
 }
 
 a:hover {
-	color: goldenrod ;
+	color: #fabd2f; /* giallo brillante */
 }
 
 .titleimg {
-	align: center ;
+	text-align: center;
 }
 
 .titleimg img {
-	margin: auto ;
-	max-width: 90% ;
-	max-height: 400px ;
-	display: block ;
+	margin: auto;
+	max-width: 90%;
+	max-height: 400px;
+	display: block;
 }
 
 .years img {
-	margin: auto ;
-	max-width: 90% ;
-	max-height: 400px ;
-	display: block ;
+	margin: auto;
+	max-width: 90%;
+	max-height: 400px;
+	display: block;
 }
 
 figcaption {
-	text-align: center ;
-	font-style: italic ;
+	text-align: center;
+	font-style: italic;
+	color: #928374; /* marrone chiaro/grigio caldo */
 }
 
 .lw, dt img, dd img, p img, li img, h1 img, h2 img, h3 img, h4 img, dt img, td img, button img {
 	max-height: .8em;
 	max-width: 1em;
-	vertical-align: middle ;
+	vertical-align: middle;
 }
 
 .loc {
-	display: none ;
-	color: #777 ;
+	display: none;
+	color: #7c6f64; /* marrone scuro */
 }
 
 .copies, .volumes {
-	color: #777 ;
+	color: #7c6f64; /* marrone scuro */
 }
 
-
-h1,h2,h3,h4,h5,h6 {
-	text-align: center ;
-	clear: both ;
+h1, h2, h3, h4, h5, h6 {
+	text-align: center;
+	clear: both;
 }
 
 header {
-	text-align: center ;
-	font-family: "Fira Sans",sans ;
-	padding-bottom: 15pt ;
+	text-align: center;
+	font-family: "Fira Sans", sans;
+	padding-bottom: 15pt;
+	color: #ebdbb2;
 }
 header h1 {
-	font-size: 30pt ;
-	margin-bottom: 0 ;
+	font-size: 30pt;
+	margin-bottom: 0;
+	color: #fabd2f;
 }
 header h2 {
-	margin-top: 0 ;
-	font-style: italic ;
-	padding: .5em ;
+	margin-top: 0;
+	font-style: italic;
+	padding: .5em;
+	color: #fe8019;
 }
 main {
-	max-width: 1000px ;
-	margin: auto ;
+	max-width: 1000px;
+	margin: auto;
 }
 
 footer {
-	max-width: 600px ;
-	margin-left: auto ;
-	margin-right: auto ;
-	text-align: center ;
-	clear: both ;
+	max-width: 600px;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	clear: both;
+	color: #928374;
 }
+
 sup {
 	vertical-align: top;
 	font-size: 0.6em;
+	color: #ebdbb2;
 }
 
 #TableOfContents li {
-	text-align: center ;
-	font-size: large ;
-	display: block ;
-	font-variant: small-caps ;
+	text-align: center;
+	font-size: large;
+	display: block;
+	font-variant: small-caps;
+	color: #ebdbb2;
 }
 
 #TableOfContents ul {
@@ -120,133 +129,154 @@ sup {
 }
 
 #TableOfContents li li {
-	font-size: small ;
-	font-variant: none ;
+	font-size: small;
+	font-variant: none;
+	color: #928374;
 }
 
 code {
-	color: lime ;
+	color: #b8bb26; /* verde oliva */
 }
 
 .resright {
-    margin: auto ;
-    display: block ;
-    text-align: center ;
-    max-width: 100% ;
+	margin: auto;
+	display: block;
+	text-align: center;
+	max-width: 100%;
 }
 .resright img {
-	max-height: 400px ;
+	max-height: 400px;
 }
 
 nav ul {
-	list-style: none ;
-	text-align: center ;
-	padding-left: 0 ;
+	list-style: none;
+	text-align: center;
+	padding-left: 0;
 }
 
 nav ul li {
-	display: inline ;
-	margin: .25em ;
+	display: inline;
+	margin: .25em;
+	color: #ebdbb2;
 }
 
 nav {
-	border-bottom: 1px #ccc dotted ;
-	width: 100% ;
+	border-bottom: 1px #7c6f64 dotted;
+	width: 100%;
 }
 
 .imgfig {
-	text-align: center ;
+	text-align: center;
 }
 
 .rounded img {
-	border-radius: 0% ;
+	border-radius: 0%;
 }
 
 .maintab {
-	margin: auto ;
-	max-width: 600px ;
-	border: solid darkred 2px ;
+	margin: auto;
+	max-width: 600px;
+	border: solid #cc241d 2px; /* rosso scuro/gruvbox */
 }
-.maintab a { display: block; width: 100% }
+.maintab a {
+	display: block;
+	width: 100%;
+	color: #ebdbb2;
+}
 
 .maintab tr td:first-child {
-	font-size: x-large ;
+	font-size: x-large;
+	color: #fabd2f;
 }
-td,th {
-	padding: .5em ;
-	max-width: 500px ;
-	border: solid gray 1px ;
-	border-collapse: collapse
+
+td, th {
+	padding: .5em;
+	max-width: 500px;
+	border: solid #928374 1px;
+	border-collapse: collapse;
+	color: #ebdbb2;
 }
-.maintab td:nth-child(1){
-	font-size: large ;
+
+.maintab td:nth-child(1) {
+	font-size: large;
+	color: #fe8019;
 }
 
 .card {
-	max-width: 250px ;
-	margin: auto ;
-	float: right ;
-	clear: both ;
+	max-width: 250px;
+	margin: auto;
+	float: right;
+	clear: both;
+	color: #ebdbb2;
 }
 
 .cardtop {
-	max-width: 100px ;
-	display: inline-block ;
-	margin: .25em ;
+	max-width: 100px;
+	display: inline-block;
+	margin: .25em;
 }
 
 .cardcont {
-	text-align: center ;
-	max-width: 700px ;
-	margin: auto ;
+	text-align: center;
+	max-width: 700px;
+	margin: auto;
+	color: #ebdbb2;
 }
 
 .cardtop img {
-	max-width: 100% ;
+	max-width: 100%;
 }
 
 .card img {
-	max-width: 100% ;
-	max-height: 300px ;
+	max-width: 100%;
+	max-height: 300px;
 }
 
 .minicard {
-	max-width: 150px ;
-	display: inline ;
-	text-align: left ;
+	max-width: 150px;
+	display: inline;
+	text-align: left;
 	padding: 0;
 	margin: 0;
+	color: #ebdbb2;
 }
 
 .minicard img {
 	max-width: 150px;
-	max-height: 100% ;
+	max-height: 100%;
 }
 
-hr { clear: both }
+hr {
+	clear: both;
+	border-color: #7c6f64;
+}
 
 .column {
 	float: left;
-	padding 10px ;
-	box-sizing: border-box ;
-	width: 100% ;
+	padding: 10px;
+	box-sizing: border-box;
+	width: 100%;
+	color: #ebdbb2;
 }
 
 @media (min-width: 1000px) {
 	.column {
 		max-width: 50%;
 	}
-	.resright, .profile{
-		display: block ;
+	.resright, .profile {
+		display: block;
 		float: right;
-		clear: both ;
-		padding: 10px ;
-		max-width: 400px ;
+		clear: both;
+		padding: 10px;
+		max-width: 400px;
 	}
 }
+
 .taglist {
-	max-width: 400px ;
-	margin: auto ;
-	text-align: center ;
-	margin-bottom: 1em ;
+	max-width: 400px;
+	margin: auto;
+	text-align: center;
+	margin-bottom: 1em;
+	color: #ebdbb2;
 }
+
