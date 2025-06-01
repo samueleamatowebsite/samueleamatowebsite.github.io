@@ -135,24 +135,16 @@
     let particles = [];
     const particleCount = 70;
 
-    // Palette Gruvbox completa
-    const gruvboxColors = [
-      '#fb4934', // red
-      '#b16286', // dark purple
-      '#d3869b', // light purple
-      '#fabd2f', // yellow
-      '#b8bb26', // green
-      '#8ec07c', // light green
-      '#83a598', // blue
-      '#458588', // dark blue
-      '#fe8019', // orange
-      '#d79921', // brown/gold
-      '#928374', // gray
-      '#a89984', // light gray/beige
+    // Palette colori h1-h6 dal tuo stylesheet
+    const colorPalette = [
+      '#6b5868', // h1
+      '#7d6b81', // h2
+      '#9a879a', // h3
+      '#b4a4b2', // h4-h6
     ];
 
-    // Scegli colore random per questa sessione
-    const baseColor = gruvboxColors[Math.floor(Math.random() * gruvboxColors.length)];
+    // Scegli colore random per questa sessione dal palette
+    const baseColor = colorPalette[Math.floor(Math.random() * colorPalette.length)];
 
     function resize() {
       width = window.innerWidth;
