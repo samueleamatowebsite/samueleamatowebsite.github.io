@@ -121,11 +121,10 @@ occasionally dips into other stuff. OSS fan, I also share small projects
   {% for post in site.posts %}
     <li>
       <a href="{{ post.url }}">{{ post.title }}</a><br>
-      <small>{{ post.excerpt }}</small>
+      <small>{{ post.excerpt | truncate: 80 }}</small>
     </li>
   {% endfor %}
 </ul>
-
 
 </div>
 
