@@ -4,19 +4,60 @@
   <meta charset="utf-8">
   <title>{{ page.title }}</title>
   <link rel="stylesheet" href="{{ '/style.css' | relative_url }}">
+  <style>
+    header {
+      display: flex;
+      justify-content: flex-start; /* Home a sinistra */
+      align-items: center;
+      padding: 1rem;
+      background-color: #222;
+    }
+    header a {
+      font-weight: bold;
+      color: #33bbff;
+      text-decoration: none;
+      font-size: 1.1rem;
+    }
+    header a:hover {
+      color: goldenrod;
+    }
+    h1.post-title {
+      font-size: 1.8rem;
+      margin: 1rem auto;
+      max-width: 800px;
+      text-align: center;
+      color: #f5f5dc;
+      font-family: Georgia, serif;
+    }
+    main {
+      max-width: 900px;
+      margin: auto;
+      padding: 0 1rem 3rem;
+      color: #eee;
+      font-family: "Garamond", Georgia, serif;
+    }
+    footer {
+      text-align: center;
+      margin-top: 3rem;
+      padding: 1rem;
+      color: #888;
+      font-size: 0.9rem;
+    }
+  </style>
 </head>
 <body>
-  <header style="display: flex; justify-content: space-between; align-items: center; padding: 1rem;">
-    <a href="{{ '/' | relative_url }}" style="font-weight: bold; text-decoration: none;">Home</a>
+  <header>
+    <a href="{{ '/' | relative_url }}">Home</a>
   </header>
+
+  {% if page.title %}
+  <h1 class="post-title">{{ page.title }}</h1>
+  {% endif %}
 
   <main>
     {{ content }}
   </main>
 
-  <footer style="text-align: center; padding: 1rem; margin-top: 2rem;">
-    &copy; {{ site.time | date: '%Y' }} Samuele Amato
-  </footer>
 </body>
 </html>
 
