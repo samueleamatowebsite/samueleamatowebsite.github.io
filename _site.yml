@@ -2,6 +2,8 @@ name: "My new website"
 output_dir: 'docs'
 output:
   html_document:
+    includes:
+      in_header: header.html
     theme: cerulean
     highlight: zenburn
     toc: true
