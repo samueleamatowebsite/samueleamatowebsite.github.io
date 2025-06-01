@@ -33,7 +33,7 @@ The Neofetch-like program was my second project created for the PSP. It displays
 as firmware details: version number plus its type on the screen. 
 
 <p align="center">
-  <img src="img/pspfetch.jpeg" alt="psp neofetch" width="400" />
+  <img src="/assets/images/pspfetch.jpeg" alt="psp neofetch" width="400" />
 </p>
 
 
