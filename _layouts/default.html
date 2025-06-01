@@ -1,3 +1,5 @@
+<!DOCTYPE html>
+<html lang="en">
 <head>
   <!-- ... resto head ... -->
   <style>
@@ -72,4 +74,18 @@
   </style>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
+<body>
+  <header>
+    <a href="{{ '/' | relative_url }}">Home</a>
+  </header>
+
+  {% if page.title %}
+  <h1 class="post-title">{{ page.title }}</h1>
+  {% endif %}
+
+  <main>
+    {{ content }}
+  </main>
+</body>
+</html>
 
