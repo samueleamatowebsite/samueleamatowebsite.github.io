@@ -1,47 +1,58 @@
-<!DOCTYPE html>
-<html lang="en">
 <head>
-  <meta charset="utf-8">
-  <title>{{ page.title }}</title>
-  <link rel="stylesheet" href="{{ '/style.css' | relative_url }}">
+  <!-- ... resto head ... -->
   <style>
-    /* Usa un font moderno */
     body {
       font-family: 'Inter', 'Roboto', Arial, sans-serif;
       background: #1b1b1b;
-      color: #eee;
+      color: #ddd;
       margin: 0;
       padding: 0;
     }
 
     header {
       display: flex;
-      justify-content: flex-start; /* Home a sinistra */
+      justify-content: flex-start;
       align-items: center;
       padding: 1rem;
-      /* Nessuno sfondo, lascia trasparente */
+      /* no background */
     }
 
     header a {
-      font-weight: 600;
-      color: #33bbff;
+      font-weight: 700;
+      color: #6b5868; /* viola-ulivo base (usato anche per h1) */
       text-decoration: none;
       font-size: 1.1rem;
       transition: color 0.3s ease;
     }
 
     header a:hover {
-      color: goldenrod;
+      color: #8a7293; /* tonalità più chiara al hover */
     }
 
     h1.post-title {
-      font-size: 1.6rem;
+      font-size: 2.2rem;
       margin: 1rem auto;
       max-width: 800px;
       text-align: center;
-      color: #f5f5dc;
+      color: #6b5868; /* viola-ulivo base */
       font-family: 'Inter', 'Roboto', Arial, sans-serif;
       font-weight: 700;
+    }
+
+    h2 {
+      color: #7d6b81; /* viola-ulivo medio */
+      text-align: center;
+      margin-top: 2rem;
+      font-weight: 600;
+    }
+
+    h3 {
+      color: #9a879a; /* viola-ulivo più chiaro */
+      font-weight: 600;
+    }
+
+    h4, h5, h6 {
+      color: #b4a4b2; /* tonalità più soft */
     }
 
     main {
@@ -59,21 +70,6 @@
       font-family: 'Inter', 'Roboto', Arial, sans-serif;
     }
   </style>
-  <!-- Carica font Inter da Google Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
-<body>
-  <header>
-    <a href="{{ '/' | relative_url }}">Home</a>
-  </header>
-
-  {% if page.title %}
-  <h1 class="post-title">{{ page.title }}</h1>
-  {% endif %}
-
-  <main>
-    {{ content }}
-  </main>
-</body>
-</html>
 
