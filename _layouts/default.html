@@ -5,45 +5,62 @@
   <title>{{ page.title }}</title>
   <link rel="stylesheet" href="{{ '/style.css' | relative_url }}">
   <style>
+    /* Usa un font moderno */
+    body {
+      font-family: 'Inter', 'Roboto', Arial, sans-serif;
+      background: #1b1b1b;
+      color: #eee;
+      margin: 0;
+      padding: 0;
+    }
+
     header {
       display: flex;
       justify-content: flex-start; /* Home a sinistra */
       align-items: center;
       padding: 1rem;
-      background-color: #222;
+      /* Nessuno sfondo, lascia trasparente */
     }
+
     header a {
-      font-weight: bold;
+      font-weight: 600;
       color: #33bbff;
       text-decoration: none;
       font-size: 1.1rem;
+      transition: color 0.3s ease;
     }
+
     header a:hover {
       color: goldenrod;
     }
+
     h1.post-title {
-      font-size: 1.8rem;
+      font-size: 1.6rem;
       margin: 1rem auto;
       max-width: 800px;
       text-align: center;
       color: #f5f5dc;
-      font-family: Georgia, serif;
+      font-family: 'Inter', 'Roboto', Arial, sans-serif;
+      font-weight: 700;
     }
+
     main {
       max-width: 900px;
       margin: auto;
       padding: 0 1rem 3rem;
-      color: #eee;
-      font-family: "Garamond", Georgia, serif;
     }
+
     footer {
       text-align: center;
       margin-top: 3rem;
       padding: 1rem;
       color: #888;
       font-size: 0.9rem;
+      font-family: 'Inter', 'Roboto', Arial, sans-serif;
     }
   </style>
+  <!-- Carica font Inter da Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
   <header>
@@ -57,7 +74,6 @@
   <main>
     {{ content }}
   </main>
-
 </body>
 </html>
 
