@@ -1,37 +1,37 @@
 body {
-	background: #282828; /* sfondo scuro caldo */
-	color: #ebdbb2; /* beige chiaro */
+	background: #2E3440; /* blu notte scuro */
+	color: #D8DEE9; /* grigio chiaro */
 	margin-bottom: 200px;
 	font-family: "Garamond", Georgia, serif, 'Noto Color Emoji', 'Apple Color Emoji', 'Segoe UI Emoji';
 }
 
 h1 {
-	color: #fabd2f; /* giallo brillante */
+	color: #81A1C1; /* azzurro chiaro */
 }
 h2 {
-	color: #fe8019; /* arancione acceso */
+	color: #88C0D0; /* azzurro */
 }
 h3 {
-	color: #d79921; /* giallo oro scuro */
+	color: #8FBCBB; /* verde acqua chiaro */
 }
 h4 {
-	color: #bdae93; /* beige/grigio caldo */
+	color: #E5E9F0; /* bianco sporco */
 }
 h5, h6 {
-	color: #a89984; /* grigio caldo */
+	color: #D8DEE9; /* grigio chiaro */
 }
 
 strong {
-	color: #bdae93; /* beige/grigio caldo */
+	color: #EBCB8B; /* giallo tenue */
 }
 
 a {
-	color: #83a598; /* verde acqua/blu-grigio */
+	color: #81A1C1; /* azzurro chiaro */
 	text-decoration: none;
 }
 
 a:hover {
-	color: #fabd2f; /* giallo brillante */
+	color: #88C0D0; /* azzurro */
 }
 
 .titleimg {
@@ -55,7 +55,7 @@ a:hover {
 figcaption {
 	text-align: center;
 	font-style: italic;
-	color: #928374; /* marrone chiaro/grigio caldo */
+	color: #81A1C1; /* azzurro chiaro */
 }
 
 .lw, dt img, dd img, p img, li img, h1 img, h2 img, h3 img, h4 img, dt img, td img, button img {
@@ -66,11 +66,11 @@ figcaption {
 
 .loc {
 	display: none;
-	color: #7c6f64; /* marrone scuro */
+	color: #4C566A; /* grigio medio */
 }
 
 .copies, .volumes {
-	color: #7c6f64; /* marrone scuro */
+	color: #4C566A; /* grigio medio */
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -82,18 +82,18 @@ header {
 	text-align: center;
 	font-family: "Fira Sans", sans;
 	padding-bottom: 15pt;
-	color: #ebdbb2;
+	color: #D8DEE9;
 }
 header h1 {
 	font-size: 30pt;
 	margin-bottom: 0;
-	color: #fabd2f;
+	color: #81A1C1;
 }
 header h2 {
 	margin-top: 0;
 	font-style: italic;
 	padding: .5em;
-	color: #fe8019;
+	color: #88C0D0;
 }
 main {
 	max-width: 1000px;
@@ -106,13 +106,13 @@ footer {
 	margin-right: auto;
 	text-align: center;
 	clear: both;
-	color: #928374;
+	color: #4C566A;
 }
 
 sup {
 	vertical-align: top;
 	font-size: 0.6em;
-	color: #ebdbb2;
+	color: #D8DEE9;
 }
 
 #TableOfContents li {
@@ -120,7 +120,7 @@ sup {
 	font-size: large;
 	display: block;
 	font-variant: small-caps;
-	color: #ebdbb2;
+	color: #D8DEE9;
 }
 
 #TableOfContents ul {
@@ -131,11 +131,11 @@ sup {
 #TableOfContents li li {
 	font-size: small;
 	font-variant: none;
-	color: #928374;
+	color: #4C566A;
 }
 
 code {
-	color: #b8bb26; /* verde oliva */
+	color: #A3BE8C; /* verde tenue */
 }
 
 .resright {
@@ -157,11 +157,11 @@ nav ul {
 nav ul li {
 	display: inline;
 	margin: .25em;
-	color: #ebdbb2;
+	color: #D8DEE9;
 }
 
 nav {
-	border-bottom: 1px #7c6f64 dotted;
+	border-bottom: 1px #4C566A dotted;
 	width: 100%;
 }
 
@@ -176,30 +176,30 @@ nav {
 .maintab {
 	margin: auto;
 	max-width: 600px;
-	border: solid #cc241d 2px; /* rosso scuro/gruvbox */
+	border: solid #81A1C1 2px; /* azzurro */
 }
 .maintab a {
 	display: block;
 	width: 100%;
-	color: #ebdbb2;
+	color: #D8DEE9;
 }
 
 .maintab tr td:first-child {
 	font-size: x-large;
-	color: #fabd2f;
+	color: #81A1C1;
 }
 
 td, th {
 	padding: .5em;
 	max-width: 500px;
-	border: solid #928374 1px;
+	border: solid #4C566A 1px;
 	border-collapse: collapse;
-	color: #ebdbb2;
+	color: #D8DEE9;
 }
 
 .maintab td:nth-child(1) {
 	font-size: large;
-	color: #fe8019;
+	color: #88C0D0;
 }
 
 .card {
@@ -207,7 +207,7 @@ td, th {
 	margin: auto;
 	float: right;
 	clear: both;
-	color: #ebdbb2;
+	color: #D8DEE9;
 }
 
 .cardtop {
@@ -220,7 +220,7 @@ td, th {
 	text-align: center;
 	max-width: 700px;
 	margin: auto;
-	color: #ebdbb2;
+	color: #D8DEE9;
 }
 
 .cardtop img {
@@ -238,7 +238,7 @@ td, th {
 	text-align: left;
 	padding: 0;
 	margin: 0;
-	color: #ebdbb2;
+	color: #D8DEE9;
 }
 
 .minicard img {
@@ -248,7 +248,7 @@ td, th {
 
 hr {
 	clear: both;
-	border-color: #7c6f64;
+	border-color: #4C566A;
 }
 
 .column {
@@ -256,7 +256,7 @@ hr {
 	padding: 10px;
 	box-sizing: border-box;
 	width: 100%;
-	color: #ebdbb2;
+	color: #D8DEE9;
 }
 
 @media (min-width: 1000px) {
@@ -277,6 +277,6 @@ hr {
 	margin: auto;
 	text-align: center;
 	margin-bottom: 1em;
-	color: #ebdbb2;
+	color: #D8DEE9;
 }
 
