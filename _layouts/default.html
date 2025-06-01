@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <link rel="icon" href="{{ '/favicon.ico' | relative_url }}" type="image/x-icon" />
-    <!-- ... resto head ... -->
+  <!-- ... resto head ... -->
   <style>
     body {
       font-family: 'Inter', 'Roboto', Arial, sans-serif;
@@ -10,6 +10,20 @@
       color: #ddd;
       margin: 0;
       padding: 0;
+      position: relative;
+      overflow-x: hidden;
+    }
+
+    /* Canvas sfondo */
+    #particle-canvas {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      pointer-events: none;
+      z-index: 0;
+      background: transparent;
     }
 
     header {
@@ -17,6 +31,8 @@
       justify-content: flex-start;
       align-items: center;
       padding: 1rem;
+      position: relative;
+      z-index: 1;
     }
 
     header a {
@@ -26,6 +42,8 @@
       font-size: 1.1rem;
       transition: color 0.3s ease;
       text-shadow: 0 0 3px rgba(0,0,0,0.8);
+      position: relative;
+      z-index: 1;
     }
 
     header a:hover {
@@ -44,6 +62,8 @@
       text-shadow: 0 0 4px rgba(0,0,0,0.85);
       padding-bottom: 0.3em;
       border-bottom: none; /* niente barra sotto */
+      position: relative;
+      z-index: 1;
     }
 
     h2, h3, h4, h5, h6 {
@@ -52,6 +72,8 @@
       padding-bottom: 0.3em;
       border-bottom: 2px solid rgba(107, 88, 104, 0.5);
       text-align: left;
+      position: relative;
+      z-index: 1;
     }
 
     h2 {
@@ -73,6 +95,8 @@
       max-width: 900px;
       margin: auto;
       padding: 0 1rem 3rem;
+      position: relative;
+      z-index: 1;
     }
 
     footer {
@@ -82,11 +106,15 @@
       color: #888;
       font-size: 0.9rem;
       font-family: 'Inter', 'Roboto', Arial, sans-serif;
+      position: relative;
+      z-index: 1;
     }
   </style>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
+  <canvas id="particle-canvas"></canvas>
+
   <header>
     <a href="{{ '/' | relative_url }}">Home</a>
   </header>
@@ -98,6 +126,120 @@
   <main>
     {{ content }}
   </main>
+
+  <script>
+    const canvas = document.getElementById('particle-canvas');
+    const ctx = canvas.getContext('2d');
+
+    let width, height;
+    let particles = [];
+    const particleCount = 70;
+
+    // Palette Gruvbox completa
+    const gruvboxColors = [
+      '#fb4934', // red
+      '#b16286', // dark purple
+      '#d3869b', // light purple
+      '#fabd2f', // yellow
+      '#b8bb26', // green
+      '#8ec07c', // light green
+      '#83a598', // blue
+      '#458588', // dark blue
+      '#fe8019', // orange
+      '#d79921', // brown/gold
+      '#928374', // gray
+      '#a89984', // light gray/beige
+    ];
+
+    // Scegli colore random per questa sessione
+    const baseColor = gruvboxColors[Math.floor(Math.random() * gruvboxColors.length)];
+
+    function resize() {
+      width = window.innerWidth;
+      height = window.innerHeight;
+      canvas.width = width * devicePixelRatio;
+      canvas.height = height * devicePixelRatio;
+      canvas.style.width = width + 'px';
+      canvas.style.height = height + 'px';
+      ctx.setTransform(1, 0, 0, 1, 0, 0);
+      ctx.scale(devicePixelRatio, devicePixelRatio);
+    }
+
+    window.addEventListener('resize', resize);
+    resize();
+
+    class Particle {
+      constructor() {
+        this.x = Math.random() * width;
+        this.y = Math.random() * height;
+        this.vx = (Math.random() - 0.5) * 0.5;
+        this.vy = (Math.random() - 0.5) * 0.5;
+        this.radius = 2;
+      }
+
+      move() {
+        this.x += this.vx;
+        this.y += this.vy;
+
+        if (this.x < 0 || this.x > width) this.vx *= -1;
+        if (this.y < 0 || this.y > height) this.vy *= -1;
+      }
+
+      draw() {
+        ctx.beginPath();
+        ctx.fillStyle = hexToRGBA(baseColor, 0.8);
+        ctx.arc(this.x, this.y, this.radius, 0, Math.PI * 2);
+        ctx.fill();
+      }
+    }
+
+    function hexToRGBA(hex, alpha) {
+      const r = parseInt(hex.substr(1, 2), 16);
+      const g = parseInt(hex.substr(3, 2), 16);
+      const b = parseInt(hex.substr(5, 2), 16);
+      return `rgba(${r},${g},${b},${alpha})`;
+    }
+
+    for (let i = 0; i < particleCount; i++) {
+      particles.push(new Particle());
+    }
+
+    function drawLines() {
+      const maxDist = 120;
+
+      for (let i = 0; i < particles.length; i++) {
+        for (let j = i + 1; j < particles.length; j++) {
+          const dx = particles[i].x - particles[j].x;
+          const dy = particles[i].y - particles[j].y;
+          const dist = Math.sqrt(dx * dx + dy * dy);
+
+          if (dist < maxDist) {
+            ctx.strokeStyle = hexToRGBA(baseColor, 1 - dist / maxDist);
+            ctx.lineWidth = 1;
+            ctx.beginPath();
+            ctx.moveTo(particles[i].x, particles[i].y);
+            ctx.lineTo(particles[j].x, particles[j].y);
+            ctx.stroke();
+          }
+        }
+      }
+    }
+
+    function animate() {
+      ctx.clearRect(0, 0, width, height);
+
+      particles.forEach(p => {
+        p.move();
+        p.draw();
+      });
+
+      drawLines();
+
+      requestAnimationFrame(animate);
+    }
+
+    animate();
+  </script>
 </body>
 </html>
 
