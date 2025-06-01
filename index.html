@@ -1,138 +1,288 @@
----
----
-
 <!DOCTYPE html>
-<html lang="en"><head>
-<meta http-equiv="content-type" content="text/html; charset=UTF-8">
-	<meta name="generator" content="Hugo 0.147.7">
-	<title>Samuele Amato</title>
-	<link rel="stylesheet" type="text/css" href="style.css">
-	<link rel="icon" href="favicon.ico">
-	<meta name="description" content="Samuele Amato's webpage with links to his videos and software projects and many written articles and personal pages.">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name="robots" content="index, follow">
-	<meta charset="utf-8">
-</head>
-<body cz-shortcut-listen="true">
-<main>
-<a href="https://samueleamato.xyz/"><header>
-	<h1 id="tag_Samuele-Amato's-Webpage">Samuele Amato's Webpage</h1>
-</header></a>
-<article>
-
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Samuele Amato - Portfolio</title>
 <style>
-p { text-align: center ;}
-dl {
-padding-left: 20px ;
-}
-dt {
-font-size: large ;
-}
-dd {
-color: #aaa ;
-font-size: small ;
-margin-bottom: .5em ;
-margin-left: 0 ;
-}
+  body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #282828; /* Gruvbox dark background */
+    color: #ebdbb2; /* Gruvbox light fg */
+  }
+  main {
+    max-width: 1000px;
+    margin: 2em auto;
+    padding: 0 1em;
+    position: relative;
+    z-index: 1;
+  }
+  h1, h2 {
+    color: #fabd2f;
+    margin-bottom: 0.5em;
+  }
+  a {
+    color: #83a598;
+    text-decoration: none;
+  }
+  a:hover {
+    text-decoration: underline;
+  }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 0.5em;
+  }
+  td {
+    padding: 0.5em;
+    border-bottom: 1px solid #3c3836;
+  }
+  /* Flex container for profile */
+  .profile {
+    display: flex;
+    align-items: center;
+    gap: 1.5em;
+    margin-bottom: 2em;
+  }
+  .profile img {
+    border-radius: 0%;
+    width: 170px;
+    height: 170px;
+    object-fit: cover;
+    flex-shrink: 0;
+  }
+  .profile-description {
+    flex: 1;
+    font-size: 1.1em;
+    line-height: 1.4;
+  }
+  /* Flex container for 2 columns below */
+  .columns-2 {
+    display: flex;
+    gap: 2em;
+    justify-content: space-between;
+  }
+  .left-column, .right-column {
+    flex: 1;
+    min-width: 280px;
+  }
+  .left-column > section {
+    margin-bottom: 2em;
+  }
+  /* Posts list styling */
+  ul.posts-list {
+    list-style: none;
+    padding-left: 0;
+    margin-top: 0.3em;
+  }
+  ul.posts-list li {
+    margin-bottom: 1em;
+    font-size: 0.95em;
+  }
+  ul.posts-list li small {
+    color: #bdae93;
+  }
+  /* Canvas styles */
+  #particle-canvas {
+    position: fixed;
+    top: 0; left: 0;
+    width: 100vw;
+    height: 100vh;
+    pointer-events: none;
+    z-index: 0;
+    background: transparent;
+  }
+  /* Responsive adjustments */
+  @media (max-width: 850px) {
+    .columns-2 {
+      flex-direction: column;
+    }
+    .left-column, .right-column {
+      min-width: auto;
+    }
+  }
 </style>
+</head>
+<body>
 
+<canvas id="particle-canvas"></canvas>
 
-<div class="column">
+<main>
+  <header>
+    <h1>Samuele Amato's Webpage</h1>
+  </header>
 
-<figure class="imgfig rounded"><a href=""><img src="pfp.jpg"></a></figure>
+  <section class="profile">
+    <img src="pfp.jpg" alt="Profile Picture" />
+    <p class="profile-description">
+      19 y/o low-level dev who loves messing with C and Rust but occasionally dips into other stuff. OSS fan, I also share small projects on <a href="https://github.com/rdwei">GitHub</a>.
+    </p>
+  </section>
 
+  <section class="columns-2">
+    <div class="left-column">
+      <section>
+        <h2>My Projects</h2>
+        <table>
+          <tbody>
+            <tr><td><a href="https://github.com/rdWei/C-rypt">C-rypt</a></td><td>Easy-to-Use Steganography tool entirely written in C.</td></tr>
+            <tr><td><a href="https://github.com/rdWei/mousice">Mousice</a></td><td>Suckless CLI YouTube-Music Player.</td></tr>
+            <tr><td><a href="https://github.com/rdWei/Lawliet">Lawliet</a></td><td>Track down social media profiles.</td></tr>
+            <tr><td><a href="https://github.com/rdWei/exaPhisher">exaPhisher</a></td><td>Social Media Phishing Suite written in python &amp; php.</td></tr>
+            <tr><td><a href="https://github.com/rdWei/OsintTube">OsintTube</a></td><td>An Easy-to-Use YouTube OSINT Tool.</td></tr>
+            <tr><td><a href="https://github.com/rdWei/SocialMediaHackingToolkit">SMHacking</a></td><td>Social Media Hacking Suite.</td></tr>
+            <tr><td><a href="https://github.com/rdWei/RMirror">RMirror</a></td><td>Export all your reMarkable notes to your PC as PDF.</td></tr>
+            <tr><td><a href="https://github.com/rdWei/UMusic">UMusic</a></td><td>A feature-rich, lightweight PSP music player.</td></tr>
+          </tbody>
+        </table>
+      </section>
 
-          <p>19 y/o low-level dev who loves messing with C and Rust but 
-occasionally dips into other stuff. OSS fan, I also share small projects
- on <a href="www.ghithub.com/rdwei">GitHub</a></p>
+      <section>
+        <h2>Find Me Here</h2>
+        <table>
+          <tbody>
+            <tr><td>Email</td><td><a href="mailto:samuele@samueleamato.xyz">samuele@samueleamato.xyz</a></td></tr>
+            <tr><td>GitHub</td><td><a href="https://github.com/rdwei">@rdwei</a></td></tr>
+            <tr><td>BlueSky</td><td><a href="https://bsky.app/profile/rdwei.bsky.social">rdwei.bsky.social</a></td></tr>
+            <tr><td>Discord Server</td><td><a href="https://discord.com/invite/m4madyG7jp">Join the community on Discord</a></td></tr>
+            <tr><td>GPG key</td><td><a href="gpg.txt">GPG key for encrypting mail if you know how</a></td></tr>
+          </tbody>
+        </table>
+      </section>
+    </div>
 
-<h2>My Projects</h2>
-
-<table class="maintab">
-  <tbody>
-    <tr>
-      <td><a href="https://github.com/rdWei/C-rypt">C-rypt</a></td>
-      <td>Easy-to-Use Steganography tool entirely written in C.</td>
-    </tr>
-    <tr>
-      <td><a href="https://github.com/rdWei/mousice">Mousice</a></td>
-      <td>Suckless CLI YouTube-Music Player.</td>
-    </tr>
-    <tr>
-      <td><a href="https://github.com/rdWei/Lawliet">Lawliet</a></td>
-      <td>Track down social media profiles.</td>
-    </tr>
-    <tr>
-      <td><a href="https://github.com/rdWei/exaPhisher">exaPhisher</a></td>
-      <td>Social Media Phishing Suite written in python &amp; php.</td>
-    </tr>
-    <tr>
-      <td><a href="https://github.com/rdWei/OsintTube">OsintTube</a></td>
-      <td>An Easy-to-Use YouTube OSINT Tool.</td>
-    </tr>
-    <tr>
-      <td><a href="https://github.com/rdWei/SocialMediaHackingToolkit">SMHacking</a></td>
-      <td>Social Media Hacking Suite.</td>
-    </tr>
-    <tr>
-      <td><a href="https://github.com/rdWei/RMirror">RMirror</a></td>
-      <td>Export all your reMarkable notes to your PC as PDF.</td>
-    </tr>
-    <tr>
-      <td><a href="https://github.com/rdWei/UMusic">UMusic</a></td>
-      <td>A feature-rich, lightweight PSP music player.</td>
-    </tr>
-  </tbody>
-</table>
-
-<h2>Find Me Here</h2>
-<table class="maintab">
-	<tbody><tr>
-		<td>Email</td>
-    <td><a href="mailto:samuele@samueleamato.xyz">samuele@samueleamato.xyz</a></td>
-	</tr>
-	<tr>
-		<td>GitHub</td>
-    <td><a href="https://github.com/rdwei">@rdwei</a></td>
-	</tr>
-	<tr>
-		<td>BlueSky</td>
-		<td><a href="https://bsky.app/profile/rdwei.bsky.social">rdwei.bsky.social</a></td>
-	</tr>
-	<tr>
-		<td>Discord Server</td>
-		<td><a href="https://discord.com/invite/m4madyG7jp">Join the community on Discord</a></td>
-	</tr>
-	<tr>
-                <td>GPG key</td>
-		<td><a href="gpg.txt">GPG key for encrypting mail if you know how</a></td>
-	</tr>
-</tbody></table>
-
-
-
-</div>
-
-<div class="column">
-<h2>My posts:</h2>
-<ul>
-  {% for post in site.posts %}
-    <li>
-      <a href="{{ post.url }}">{{ post.title }}</a><br>
-      <small>{{ post.excerpt | truncate: 100 }}</small>
-    </li>
-  {% endfor %}
-</ul>
-
-</div>
-
-<br clear="all">
-</article>
+    <div class="right-column">
+      <section>
+        <h2>My Posts</h2>
+        <ul class="posts-list">
+          {% for post in site.posts %}
+            <li>
+              <a href="{{ post.url }}">{{ post.title }}</a><br />
+              <small>{{ post.excerpt | truncate: 100 }}</small>
+            </li>
+          {% endfor %}
+        </ul>
+      </section>
+    </div>
+  </section>
 </main>
-<footer>
-      <!-- todo -->
-</footer>
+
+<script>
+  const canvas = document.getElementById('particle-canvas');
+  const ctx = canvas.getContext('2d');
+
+  let width, height;
+  let particles = [];
+  const particleCount = 70;
+
+  // Palette Gruvbox completa: light e dark (più colori)
+  const gruvboxColors = [
+    '#fb4934', // red
+    '#b16286', // dark purple
+    '#d3869b', // light purple
+    '#fabd2f', // yellow
+    '#b8bb26', // green
+    '#8ec07c', // light green
+    '#83a598', // blue
+    '#458588', // dark blue
+    '#fe8019', // orange
+    '#d79921', // brown/gold
+    '#928374', // gray
+    '#a89984', // light gray/beige
+  ];
+
+  // Ogni refresh sceglie un colore random tra tutti quelli nella palette
+  const baseColor = gruvboxColors[Math.floor(Math.random() * gruvboxColors.length)];
+
+  function resize() {
+    width = window.innerWidth;
+    height = window.innerHeight;
+    canvas.width = width * devicePixelRatio;
+    canvas.height = height * devicePixelRatio;
+    canvas.style.width = width + 'px';
+    canvas.style.height = height + 'px';
+    ctx.setTransform(1, 0, 0, 1, 0, 0);
+    ctx.scale(devicePixelRatio, devicePixelRatio);
+  }
+
+  window.addEventListener('resize', resize);
+  resize();
+
+  class Particle {
+    constructor() {
+      this.x = Math.random() * width;
+      this.y = Math.random() * height;
+      this.vx = (Math.random() - 0.5) * 0.5;
+      this.vy = (Math.random() - 0.5) * 0.5;
+      this.radius = 2;
+    }
+
+    move() {
+      this.x += this.vx;
+      this.y += this.vy;
+
+      if (this.x < 0 || this.x > width) this.vx *= -1;
+      if (this.y < 0 || this.y > height) this.vy *= -1;
+    }
+
+    draw() {
+      ctx.beginPath();
+      ctx.fillStyle = hexToRGBA(baseColor, 0.8);
+      ctx.arc(this.x, this.y, this.radius, 0, Math.PI * 2);
+      ctx.fill();
+    }
+  }
+
+  function hexToRGBA(hex, alpha) {
+    const r = parseInt(hex.substr(1, 2), 16);
+    const g = parseInt(hex.substr(3, 2), 16);
+    const b = parseInt(hex.substr(5, 2), 16);
+    return `rgba(${r},${g},${b},${alpha})`;
+  }
+
+  for (let i = 0; i < particleCount; i++) {
+    particles.push(new Particle());
+  }
+
+  function drawLines() {
+    const maxDist = 120;
+
+    for (let i = 0; i < particles.length; i++) {
+      for (let j = i + 1; j < particles.length; j++) {
+        const dx = particles[i].x - particles[j].x;
+        const dy = particles[i].y - particles[j].y;
+        const dist = Math.sqrt(dx * dx + dy * dy);
+
+        if (dist < maxDist) {
+          ctx.strokeStyle = hexToRGBA(baseColor, 1 - dist / maxDist);
+          ctx.lineWidth = 1;
+          ctx.beginPath();
+          ctx.moveTo(particles[i].x, particles[i].y);
+          ctx.lineTo(particles[j].x, particles[j].y);
+          ctx.stroke();
+        }
+      }
+    }
+  }
+
+  function animate() {
+    ctx.clearRect(0, 0, width, height);
+
+    particles.forEach(p => {
+      p.move();
+      p.draw();
+    });
+
+    drawLines();
+
+    requestAnimationFrame(animate);
+  }
+
+  animate();
+</script>
 
 
+</body>
+</html>
 
-</body></html>
