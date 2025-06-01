@@ -1,126 +1,124 @@
 body {
-	background: #2E3440; /* blu notte scuro */
-	color: #D8DEE9; /* grigio chiaro */
-	margin-bottom: 200px;
-	font-family: "Garamond", Georgia, serif, 'Noto Color Emoji', 'Apple Color Emoji', 'Segoe UI Emoji';
+	background: #1a1b26; /* sfondo scuro tipico Tokyo Night */
+	color: #c0caf5; /* testo chiaro, azzurro tenue */
+	margin-bottom: 200px ;
+	font-family: "Garamond", Georgia, serif, 'Noto Color Emoji', 'Apple Color Emoji', 'Segoe UI Emoji' ;
 }
 
 h1 {
-	color: #81A1C1; /* azzurro chiaro */
+	color: #bb9af7; /* lilla chiaro */
 }
 h2 {
-	color: #88C0D0; /* azzurro */
+	color: #7dcfff; /* azzurro brillante */
 }
 h3 {
-	color: #8FBCBB; /* verde acqua chiaro */
+	color: #a9b1d6; /* azzurro/grigio */
 }
 h4 {
-	color: #E5E9F0; /* bianco sporco */
+	color: #414868; /* blu scuro */
 }
-h5, h6 {
-	color: #D8DEE9; /* grigio chiaro */
+h5, h6 { 
+	color: #565f89; /* grigio/blu scuro */
 }
 
 strong {
-	color: #EBCB8B; /* giallo tenue */
+	color: #f7768e; /* rosa acceso */
 }
 
 a {
-	color: #81A1C1; /* azzurro chiaro */
-	text-decoration: none;
+	color: #7dcfff ; /* azzurro brillante per i link */
+	text-decoration: none ;
 }
 
 a:hover {
-	color: #88C0D0; /* azzurro */
+	color: #bb9af7 ; /* lilla chiaro al passaggio */
 }
 
 .titleimg {
-	text-align: center;
+	align: center ;
 }
 
 .titleimg img {
-	margin: auto;
-	max-width: 90%;
-	max-height: 400px;
-	display: block;
+	margin: auto ;
+	max-width: 90% ;
+	max-height: 400px ;
+	display: block ;
 }
 
 .years img {
-	margin: auto;
-	max-width: 90%;
-	max-height: 400px;
-	display: block;
+	margin: auto ;
+	max-width: 90% ;
+	max-height: 400px ;
+	display: block ;
 }
 
 figcaption {
-	text-align: center;
-	font-style: italic;
-	color: #81A1C1; /* azzurro chiaro */
+	text-align: center ;
+	font-style: italic ;
+	color: #565f89; /* testo caption più tenue */
 }
 
 .lw, dt img, dd img, p img, li img, h1 img, h2 img, h3 img, h4 img, dt img, td img, button img {
 	max-height: .8em;
 	max-width: 1em;
-	vertical-align: middle;
+	vertical-align: middle ;
 }
 
 .loc {
-	display: none;
-	color: #4C566A; /* grigio medio */
+	display: none ;
+	color: #565f89 ;
 }
 
 .copies, .volumes {
-	color: #4C566A; /* grigio medio */
+	color: #565f89 ;
 }
 
-h1, h2, h3, h4, h5, h6 {
-	text-align: center;
-	clear: both;
+h1,h2,h3,h4,h5,h6 {
+	text-align: center ;
+	clear: both ;
 }
 
 header {
-	text-align: center;
-	font-family: "Fira Sans", sans;
-	padding-bottom: 15pt;
-	color: #D8DEE9;
+	text-align: center ;
+	font-family: "Fira Sans",sans ;
+	padding-bottom: 15pt ;
 }
 header h1 {
-	font-size: 30pt;
-	margin-bottom: 0;
-	color: #81A1C1;
+	font-size: 30pt ;
+	margin-bottom: 0 ;
+	color: #bb9af7;
 }
 header h2 {
-	margin-top: 0;
-	font-style: italic;
-	padding: .5em;
-	color: #88C0D0;
+	margin-top: 0 ;
+	font-style: italic ;
+	padding: .5em ;
+	color: #7dcfff;
 }
 main {
-	max-width: 1000px;
-	margin: auto;
+	max-width: 1000px ;
+	margin: auto ;
 }
 
 footer {
-	max-width: 600px;
-	margin-left: auto;
-	margin-right: auto;
-	text-align: center;
-	clear: both;
-	color: #4C566A;
+	max-width: 600px ;
+	margin-left: auto ;
+	margin-right: auto ;
+	text-align: center ;
+	clear: both ;
+	color: #565f89;
 }
-
 sup {
 	vertical-align: top;
 	font-size: 0.6em;
-	color: #D8DEE9;
+	color: #7dcfff;
 }
 
 #TableOfContents li {
-	text-align: center;
-	font-size: large;
-	display: block;
-	font-variant: small-caps;
-	color: #D8DEE9;
+	text-align: center ;
+	font-size: large ;
+	display: block ;
+	font-variant: small-caps ;
+	color: #c0caf5;
 }
 
 #TableOfContents ul {
@@ -129,154 +127,413 @@ sup {
 }
 
 #TableOfContents li li {
-	font-size: small;
-	font-variant: none;
-	color: #4C566A;
+	font-size: small ;
+	font-variant: none ;
+	color: #565f89;
 }
 
 code {
-	color: #A3BE8C; /* verde tenue */
+	color: #9ece6a ; /* verde lime Tokyo Night */
 }
 
 .resright {
-	margin: auto;
-	display: block;
-	text-align: center;
-	max-width: 100%;
+    margin: auto ;
+    display: block ;
+    text-align: center ;
+    max-width: 100% ;
 }
 .resright img {
-	max-height: 400px;
+	max-height: 400px ;
 }
 
 nav ul {
-	list-style: none;
-	text-align: center;
-	padding-left: 0;
+	list-style: none ;
+	text-align: center ;
+	padding-left: 0 ;
 }
 
 nav ul li {
-	display: inline;
-	margin: .25em;
-	color: #D8DEE9;
+	display: inline ;
+	margin: .25em ;
+	color: #7dcfff;
 }
 
 nav {
-	border-bottom: 1px #4C566A dotted;
-	width: 100%;
+	border-bottom: 1px #414868 dotted ;
+	width: 100% ;
 }
 
 .imgfig {
-	text-align: center;
+	text-align: center ;
 }
 
 .rounded img {
-	border-radius: 0%;
+	border-radius: 0% ;
 }
 
 .maintab {
-	margin: auto;
-	max-width: 600px;
-	border: solid #81A1C1 2px; /* azzurro */
+	margin: auto ;
+	max-width: 600px ;
+	border: solid #bb9af7 2px ;
 }
-.maintab a {
-	display: block;
-	width: 100%;
-	color: #D8DEE9;
-}
+.maintab a { display: block; width: 100% }
 
 .maintab tr td:first-child {
-	font-size: x-large;
-	color: #81A1C1;
+	font-size: x-large ;
+	color: #7dcfff;
 }
-
-td, th {
-	padding: .5em;
-	max-width: 500px;
-	border: solid #4C566A 1px;
-	border-collapse: collapse;
-	color: #D8DEE9;
+td,th {
+	padding: .5em ;
+	max-width: 500px ;
+	border: solid #414868 1px ;
+	border-collapse: collapse
+	color: #c0caf5;
 }
-
-.maintab td:nth-child(1) {
-	font-size: large;
-	color: #88C0D0;
+.maintab td:nth-child(1){
+	font-size: large ;
+	color: #a9b1d6;
 }
 
 .card {
-	max-width: 250px;
-	margin: auto;
-	float: right;
-	clear: both;
-	color: #D8DEE9;
+	max-width: 250px ;
+	margin: auto ;
+	float: right ;
+	clear: both ;
+	color: #c0caf5;
 }
 
 .cardtop {
-	max-width: 100px;
-	display: inline-block;
-	margin: .25em;
+	max-width: 100px ;
+	display: inline-block ;
+	margin: .25em ;
 }
 
 .cardcont {
-	text-align: center;
-	max-width: 700px;
-	margin: auto;
-	color: #D8DEE9;
+	text-align: center ;
+	max-width: 700px ;
+	margin: auto ;
 }
 
 .cardtop img {
-	max-width: 100%;
+	max-width: 100% ;
 }
 
 .card img {
-	max-width: 100%;
-	max-height: 300px;
+	max-width: 100% ;
+	max-height: 300px ;
 }
 
 .minicard {
-	max-width: 150px;
-	display: inline;
-	text-align: left;
+	max-width: 150px ;
+	display: inline ;
+	text-align: left ;
 	padding: 0;
 	margin: 0;
-	color: #D8DEE9;
+	color: #c0caf5;
 }
 
 .minicard img {
 	max-width: 150px;
-	max-height: 100%;
+	max-height: 100% ;
 }
 
-hr {
-	clear: both;
-	border-color: #4C566A;
-}
+hr { clear: both ; border-color: #414868; }
 
 .column {
 	float: left;
-	padding: 10px;
-	box-sizing: border-box;
-	width: 100%;
-	color: #D8DEE9;
+	padding: 10px ;
+	box-sizing: border-box ;
+	width: 100% ;
+	color: #c0caf5;
 }
 
 @media (min-width: 1000px) {
 	.column {
 		max-width: 50%;
 	}
-	.resright, .profile {
-		display: block;
+	.resright, .profile{
+		display: block ;
 		float: right;
-		clear: both;
-		padding: 10px;
-		max-width: 400px;
+		clear: both ;
+		padding: 10px ;
+		max-width: 400px ;
+		color: #c0caf5;
 	}
 }
-
 .taglist {
-	max-width: 400px;
-	margin: auto;
-	text-align: center;
-	margin-bottom: 1em;
-	color: #D8DEE9;
+	max-width: 400px ;
+	margin: auto ;
+	text-align: center ;
+	margin-bottom: 1em ;
+	color: #c0caf5;
+}
+body {
+	background: #1a1b26; /* sfondo scuro tipico Tokyo Night */
+	color: #c0caf5; /* testo chiaro, azzurro tenue */
+	margin-bottom: 200px ;
+	font-family: "Garamond", Georgia, serif, 'Noto Color Emoji', 'Apple Color Emoji', 'Segoe UI Emoji' ;
+}
+
+h1 {
+	color: #bb9af7; /* lilla chiaro */
+}
+h2 {
+	color: #7dcfff; /* azzurro brillante */
+}
+h3 {
+	color: #a9b1d6; /* azzurro/grigio */
+}
+h4 {
+	color: #414868; /* blu scuro */
+}
+h5, h6 { 
+	color: #565f89; /* grigio/blu scuro */
+}
+
+strong {
+	color: #f7768e; /* rosa acceso */
+}
+
+a {
+	color: #7dcfff ; /* azzurro brillante per i link */
+	text-decoration: none ;
+}
+
+a:hover {
+	color: #bb9af7 ; /* lilla chiaro al passaggio */
+}
+
+.titleimg {
+	align: center ;
+}
+
+.titleimg img {
+	margin: auto ;
+	max-width: 90% ;
+	max-height: 400px ;
+	display: block ;
+}
+
+.years img {
+	margin: auto ;
+	max-width: 90% ;
+	max-height: 400px ;
+	display: block ;
+}
+
+figcaption {
+	text-align: center ;
+	font-style: italic ;
+	color: #565f89; /* testo caption più tenue */
+}
+
+.lw, dt img, dd img, p img, li img, h1 img, h2 img, h3 img, h4 img, dt img, td img, button img {
+	max-height: .8em;
+	max-width: 1em;
+	vertical-align: middle ;
+}
+
+.loc {
+	display: none ;
+	color: #565f89 ;
+}
+
+.copies, .volumes {
+	color: #565f89 ;
+}
+
+h1,h2,h3,h4,h5,h6 {
+	text-align: center ;
+	clear: both ;
+}
+
+header {
+	text-align: center ;
+	font-family: "Fira Sans",sans ;
+	padding-bottom: 15pt ;
+}
+header h1 {
+	font-size: 30pt ;
+	margin-bottom: 0 ;
+	color: #bb9af7;
+}
+header h2 {
+	margin-top: 0 ;
+	font-style: italic ;
+	padding: .5em ;
+	color: #7dcfff;
+}
+main {
+	max-width: 1000px ;
+	margin: auto ;
+}
+
+footer {
+	max-width: 600px ;
+	margin-left: auto ;
+	margin-right: auto ;
+	text-align: center ;
+	clear: both ;
+	color: #565f89;
+}
+sup {
+	vertical-align: top;
+	font-size: 0.6em;
+	color: #7dcfff;
+}
+
+#TableOfContents li {
+	text-align: center ;
+	font-size: large ;
+	display: block ;
+	font-variant: small-caps ;
+	color: #c0caf5;
+}
+
+#TableOfContents ul {
+	margin: 0;
+	padding: 0;
+}
+
+#TableOfContents li li {
+	font-size: small ;
+	font-variant: none ;
+	color: #565f89;
+}
+
+code {
+	color: #9ece6a ; /* verde lime Tokyo Night */
+}
+
+.resright {
+    margin: auto ;
+    display: block ;
+    text-align: center ;
+    max-width: 100% ;
+}
+.resright img {
+	max-height: 400px ;
+}
+
+nav ul {
+	list-style: none ;
+	text-align: center ;
+	padding-left: 0 ;
+}
+
+nav ul li {
+	display: inline ;
+	margin: .25em ;
+	color: #7dcfff;
+}
+
+nav {
+	border-bottom: 1px #414868 dotted ;
+	width: 100% ;
+}
+
+.imgfig {
+	text-align: center ;
+}
+
+.rounded img {
+	border-radius: 0% ;
+}
+
+.maintab {
+	margin: auto ;
+	max-width: 600px ;
+	border: solid #bb9af7 2px ;
+}
+.maintab a { display: block; width: 100% }
+
+.maintab tr td:first-child {
+	font-size: x-large ;
+	color: #7dcfff;
+}
+td,th {
+	padding: .5em ;
+	max-width: 500px ;
+	border: solid #414868 1px ;
+	border-collapse: collapse
+	color: #c0caf5;
+}
+.maintab td:nth-child(1){
+	font-size: large ;
+	color: #a9b1d6;
+}
+
+.card {
+	max-width: 250px ;
+	margin: auto ;
+	float: right ;
+	clear: both ;
+	color: #c0caf5;
+}
+
+.cardtop {
+	max-width: 100px ;
+	display: inline-block ;
+	margin: .25em ;
+}
+
+.cardcont {
+	text-align: center ;
+	max-width: 700px ;
+	margin: auto ;
+}
+
+.cardtop img {
+	max-width: 100% ;
+}
+
+.card img {
+	max-width: 100% ;
+	max-height: 300px ;
+}
+
+.minicard {
+	max-width: 150px ;
+	display: inline ;
+	text-align: left ;
+	padding: 0;
+	margin: 0;
+	color: #c0caf5;
+}
+
+.minicard img {
+	max-width: 150px;
+	max-height: 100% ;
+}
+
+hr { clear: both ; border-color: #414868; }
+
+.column {
+	float: left;
+	padding: 10px ;
+	box-sizing: border-box ;
+	width: 100% ;
+	color: #c0caf5;
+}
+
+@media (min-width: 1000px) {
+	.column {
+		max-width: 50%;
+	}
+	.resright, .profile{
+		display: block ;
+		float: right;
+		clear: both ;
+		padding: 10px ;
+		max-width: 400px ;
+		color: #c0caf5;
+	}
+}
+.taglist {
+	max-width: 400px ;
+	margin: auto ;
+	text-align: center ;
+	margin-bottom: 1em ;
+	color: #c0caf5;
 }
 
