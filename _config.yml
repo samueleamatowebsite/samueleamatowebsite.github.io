@@ -1,8 +1,0 @@
-title: Samuele Amato's Blog
-description: 19 y/o dev who loves messing with C and Rust but occasionally dips into other stuff. OSS fan, I also share small projects on GitHub
-author: Samuele Amato
-theme: minima
-plugins:
-  - jekyll-feed
-  - jekyll-seo-tag
-
