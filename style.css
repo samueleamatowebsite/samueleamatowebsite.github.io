@@ -6,31 +6,33 @@ body {
 }
 
 h1 {
-	color: chocolate ;
+	color: #9b59b6 ; /* viola medio */
 }
 h2 {
-	color: sandybrown ;
+	color: #8e44ad ; /* viola scuro */
 }
 h3 {
-	color: tan ;
+	color: #7d3c98 ; /* viola ancora più scuro */
 }
 h4 {
-	color: wheat ;
+	color: #b29ddb ; /* lilla chiaro */
 }
-h5, h6 { color: cornsilk ; }
+h5, h6 { color: #d6c5f0 ; /* lilla molto chiaro */ }
 
 strong {
-	color: wheat ;
+	color: #b29ddb ; /* lilla chiaro */
 }
 
 a {
-	color: #33bbff ;
+	color: #a18cff ; /* viola azzurro */
 	text-decoration: none ;
 }
 
 a:hover {
-	color: goldenrod ;
+	color: #c19aff ; /* viola chiaro al passaggio */
 }
+
+/* Il resto rimane invariato */
 
 .titleimg {
 	align: center ;
@@ -159,13 +161,13 @@ nav {
 }
 
 .rounded img {
-	border-radius: 50% ;
+	border-radius: 0% ;
 }
 
 .maintab {
 	margin: auto ;
 	max-width: 600px ;
-	border: solid darkred 2px ;
+	border: solid #6a1b9a 2px ; /* bordo viola scuro */
 }
 .maintab a { display: block; width: 100% }
 
@@ -228,6 +230,7 @@ hr { clear: both }
 .column {
 	float: left;
 	padding 10px ;
+
 	box-sizing: border-box ;
 	width: 100% ;
 }
@@ -250,3 +253,4 @@ hr { clear: both }
 	text-align: center ;
 	margin-bottom: 1em ;
 }
+
