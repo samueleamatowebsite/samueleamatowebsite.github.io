@@ -1,0 +1,42 @@
+body {
+  font-family: sans-serif;
+  background: #ffffff;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  display: flex;
+  min-height: 100vh;
+}
+
+.left {
+  width: 60%;
+  padding: 2em;
+  border-right: 1px solid #ddd;
+}
+
+.right {
+  width: 40%;
+  padding: 2em;
+  background: #f9f9f9;
+}
+
+.profile-img {
+  width: 120px;
+  border-radius: 50%;
+}
+
+.bio {
+  margin-top: 1em;
+}
+
+.post-list {
+  list-style: none;
+  padding: 0;
+}
+
+.post-list li {
+  margin-bottom: 1.2em;
+}
+
