@@ -1,0 +1,252 @@
+body {
+	background: #1b1b1b ;
+	color: #fff ;
+	margin-bottom: 200px ;
+	font-family: "Garamond", Georgia, serif, 'Noto Color Emoji', 'Apple Color Emoji', 'Segoe UI Emoji' ;
+}
+
+h1 {
+	color: chocolate ;
+}
+h2 {
+	color: sandybrown ;
+}
+h3 {
+	color: tan ;
+}
+h4 {
+	color: wheat ;
+}
+h5, h6 { color: cornsilk ; }
+
+strong {
+	color: wheat ;
+}
+
+a {
+	color: #33bbff ;
+	text-decoration: none ;
+}
+
+a:hover {
+	color: goldenrod ;
+}
+
+.titleimg {
+	align: center ;
+}
+
+.titleimg img {
+	margin: auto ;
+	max-width: 90% ;
+	max-height: 400px ;
+	display: block ;
+}
+
+.years img {
+	margin: auto ;
+	max-width: 90% ;
+	max-height: 400px ;
+	display: block ;
+}
+
+figcaption {
+	text-align: center ;
+	font-style: italic ;
+}
+
+.lw, dt img, dd img, p img, li img, h1 img, h2 img, h3 img, h4 img, dt img, td img, button img {
+	max-height: .8em;
+	max-width: 1em;
+	vertical-align: middle ;
+}
+
+.loc {
+	display: none ;
+	color: #777 ;
+}
+
+.copies, .volumes {
+	color: #777 ;
+}
+
+
+h1,h2,h3,h4,h5,h6 {
+	text-align: center ;
+	clear: both ;
+}
+
+header {
+	text-align: center ;
+	font-family: "Fira Sans",sans ;
+	padding-bottom: 15pt ;
+}
+header h1 {
+	font-size: 30pt ;
+	margin-bottom: 0 ;
+}
+header h2 {
+	margin-top: 0 ;
+	font-style: italic ;
+	padding: .5em ;
+}
+main {
+	max-width: 1000px ;
+	margin: auto ;
+}
+
+footer {
+	max-width: 600px ;
+	margin-left: auto ;
+	margin-right: auto ;
+	text-align: center ;
+	clear: both ;
+}
+sup {
+	vertical-align: top;
+	font-size: 0.6em;
+}
+
+#TableOfContents li {
+	text-align: center ;
+	font-size: large ;
+	display: block ;
+	font-variant: small-caps ;
+}
+
+#TableOfContents ul {
+	margin: 0;
+	padding: 0;
+}
+
+#TableOfContents li li {
+	font-size: small ;
+	font-variant: none ;
+}
+
+code {
+	color: lime ;
+}
+
+.resright {
+    margin: auto ;
+    display: block ;
+    text-align: center ;
+    max-width: 100% ;
+}
+.resright img {
+	max-height: 400px ;
+}
+
+nav ul {
+	list-style: none ;
+	text-align: center ;
+	padding-left: 0 ;
+}
+
+nav ul li {
+	display: inline ;
+	margin: .25em ;
+}
+
+nav {
+	border-bottom: 1px #ccc dotted ;
+	width: 100% ;
+}
+
+.imgfig {
+	text-align: center ;
+}
+
+.rounded img {
+	border-radius: 50% ;
+}
+
+.maintab {
+	margin: auto ;
+	max-width: 600px ;
+	border: solid darkred 2px ;
+}
+.maintab a { display: block; width: 100% }
+
+.maintab tr td:first-child {
+	font-size: x-large ;
+}
+td,th {
+	padding: .5em ;
+	max-width: 500px ;
+	border: solid gray 1px ;
+	border-collapse: collapse
+}
+.maintab td:nth-child(1){
+	font-size: large ;
+}
+
+.card {
+	max-width: 250px ;
+	margin: auto ;
+	float: right ;
+	clear: both ;
+}
+
+.cardtop {
+	max-width: 100px ;
+	display: inline-block ;
+	margin: .25em ;
+}
+
+.cardcont {
+	text-align: center ;
+	max-width: 700px ;
+	margin: auto ;
+}
+
+.cardtop img {
+	max-width: 100% ;
+}
+
+.card img {
+	max-width: 100% ;
+	max-height: 300px ;
+}
+
+.minicard {
+	max-width: 150px ;
+	display: inline ;
+	text-align: left ;
+	padding: 0;
+	margin: 0;
+}
+
+.minicard img {
+	max-width: 150px;
+	max-height: 100% ;
+}
+
+hr { clear: both }
+
+.column {
+	float: left;
+	padding 10px ;
+	box-sizing: border-box ;
+	width: 100% ;
+}
+
+@media (min-width: 1000px) {
+	.column {
+		max-width: 50%;
+	}
+	.resright, .profile{
+		display: block ;
+		float: right;
+		clear: both ;
+		padding: 10px ;
+		max-width: 400px ;
+	}
+}
+.taglist {
+	max-width: 400px ;
+	margin: auto ;
+	text-align: center ;
+	margin-bottom: 1em ;
+}
