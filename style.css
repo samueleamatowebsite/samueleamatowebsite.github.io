@@ -1,119 +1,126 @@
 body {
-	background: #1b1b1b ;
-	color: #fff ;
-	margin-bottom: 200px ;
-	font-family: "Garamond", Georgia, serif, 'Noto Color Emoji', 'Apple Color Emoji', 'Segoe UI Emoji' ;
+	background: #f9f9f9; /* chiaro, quasi bianco */
+	color: #333; /* testo scuro ma non nero pieno, più morbido */
+	margin-bottom: 200px;
+	font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
 h1 {
-	color: #9b59b6 ; /* viola medio */
+	color: #2c3e50; /* blu scuro/grigio */
 }
 h2 {
-	color: #8e44ad ; /* viola scuro */
+	color: #34495e; /* blu grigio leggermente più chiaro */
 }
 h3 {
-	color: #7d3c98 ; /* viola ancora più scuro */
+	color: #4a5a6a; /* ancora più chiaro */
 }
 h4 {
-	color: #b29ddb ; /* lilla chiaro */
+	color: #6c7a89; /* grigio medio */
 }
-h5, h6 { color: #d6c5f0 ; /* lilla molto chiaro */ }
+h5, h6 {
+	color: #95a5a6; /* grigio chiaro */
+}
 
 strong {
-	color: #b29ddb ; /* lilla chiaro */
+	color: #2c3e50; /* testo forte blu scuro/grigio */
 }
 
 a {
-	color: #a18cff ; /* viola azzurro */
-	text-decoration: none ;
+	color: #2980b9; /* blu brillante */
+	text-decoration: none;
 }
 
 a:hover {
-	color: #c19aff ; /* viola chiaro al passaggio */
+	color: #3498db; /* azzurro chiaro al passaggio */
 }
 
 /* Il resto rimane invariato */
 
 .titleimg {
-	align: center ;
+	text-align: center;
 }
 
 .titleimg img {
-	margin: auto ;
-	max-width: 90% ;
-	max-height: 400px ;
-	display: block ;
+	margin: auto;
+	max-width: 90%;
+	max-height: 400px;
+	display: block;
 }
 
 .years img {
-	margin: auto ;
-	max-width: 90% ;
-	max-height: 400px ;
-	display: block ;
+	margin: auto;
+	max-width: 90%;
+	max-height: 400px;
+	display: block;
 }
 
 figcaption {
-	text-align: center ;
-	font-style: italic ;
+	text-align: center;
+	font-style: italic;
+	color: #7f8c8d; /* grigio soft per didascalie */
 }
 
 .lw, dt img, dd img, p img, li img, h1 img, h2 img, h3 img, h4 img, dt img, td img, button img {
 	max-height: .8em;
 	max-width: 1em;
-	vertical-align: middle ;
+	vertical-align: middle;
 }
 
 .loc {
-	display: none ;
-	color: #777 ;
+	display: none;
+	color: #999;
 }
 
 .copies, .volumes {
-	color: #777 ;
+	color: #999;
 }
 
-
-h1,h2,h3,h4,h5,h6 {
-	text-align: center ;
-	clear: both ;
+h1, h2, h3, h4, h5, h6 {
+	text-align: center;
+	clear: both;
 }
 
 header {
-	text-align: center ;
-	font-family: "Fira Sans",sans ;
-	padding-bottom: 15pt ;
+	text-align: center;
+	font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+	padding-bottom: 15pt;
+	color: #2c3e50;
 }
 header h1 {
-	font-size: 30pt ;
-	margin-bottom: 0 ;
+	font-size: 30pt;
+	margin-bottom: 0;
 }
 header h2 {
-	margin-top: 0 ;
-	font-style: italic ;
-	padding: .5em ;
+	margin-top: 0;
+	font-style: italic;
+	padding: .5em;
+	color: #34495e;
 }
 main {
-	max-width: 1000px ;
-	margin: auto ;
+	max-width: 1000px;
+	margin: auto;
 }
 
 footer {
-	max-width: 600px ;
-	margin-left: auto ;
-	margin-right: auto ;
-	text-align: center ;
-	clear: both ;
+	max-width: 600px;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	clear: both;
+	color: #7f8c8d;
 }
 sup {
 	vertical-align: top;
 	font-size: 0.6em;
+	color: #7f8c8d;
 }
 
 #TableOfContents li {
-	text-align: center ;
-	font-size: large ;
-	display: block ;
-	font-variant: small-caps ;
+	text-align: center;
+	font-size: large;
+	display: block;
+	font-variant: small-caps;
+	color: #34495e;
 }
 
 #TableOfContents ul {
@@ -122,135 +129,160 @@ sup {
 }
 
 #TableOfContents li li {
-	font-size: small ;
-	font-variant: none ;
+	font-size: small;
+	font-variant: none;
+	color: #7f8c8d;
 }
 
 code {
-	color: lime ;
+	color: #27ae60; /* verde moderno */
+	background-color: #ecf0f1;
+	padding: 2px 4px;
+	border-radius: 3px;
 }
 
 .resright {
-    margin: auto ;
-    display: block ;
-    text-align: center ;
-    max-width: 100% ;
+	margin: auto;
+	display: block;
+	text-align: center;
+	max-width: 100%;
 }
 .resright img {
-	max-height: 400px ;
+	max-height: 400px;
 }
 
 nav ul {
-	list-style: none ;
-	text-align: center ;
-	padding-left: 0 ;
+	list-style: none;
+	text-align: center;
+	padding-left: 0;
 }
 
 nav ul li {
-	display: inline ;
-	margin: .25em ;
+	display: inline;
+	margin: .25em;
 }
 
 nav {
-	border-bottom: 1px #ccc dotted ;
-	width: 100% ;
+	border-bottom: 1px #ccc dotted;
+	width: 100%;
 }
 
 .imgfig {
-	text-align: center ;
+	text-align: center;
 }
 
 .rounded img {
-	border-radius: 0% ;
+	border-radius: 4px; /* un tocco più moderno con angoli leggermente arrotondati */
 }
 
 .maintab {
-	margin: auto ;
-	max-width: 600px ;
-	border: solid #6a1b9a 2px ; /* bordo viola scuro */
+	margin: auto;
+	max-width: 600px;
+	border: solid #bdc3c7 2px; /* bordo grigio chiaro */
+	border-radius: 6px;
+	background-color: #fff;
 }
-.maintab a { display: block; width: 100% }
+.maintab a {
+	display: block;
+	width: 100%;
+	color: #2980b9;
+	text-decoration: none;
+}
 
 .maintab tr td:first-child {
-	font-size: x-large ;
+	font-size: x-large;
+	color: #2c3e50;
 }
-td,th {
-	padding: .5em ;
-	max-width: 500px ;
-	border: solid gray 1px ;
-	border-collapse: collapse
+td, th {
+	padding: .5em;
+	max-width: 500px;
+	border: solid #dcdcdc 1px;
+	border-collapse: collapse;
 }
-.maintab td:nth-child(1){
-	font-size: large ;
+.maintab td:nth-child(1) {
+	font-size: large;
+	color: #34495e;
 }
 
 .card {
-	max-width: 250px ;
-	margin: auto ;
-	float: right ;
-	clear: both ;
+	max-width: 250px;
+	margin: auto;
+	float: right;
+	clear: both;
+	background: #fff;
+	border-radius: 8px;
+	box-shadow: 0 2px 8px rgb(0 0 0 / 0.1);
+	padding: 1em;
 }
 
 .cardtop {
-	max-width: 100px ;
-	display: inline-block ;
-	margin: .25em ;
+	max-width: 100px;
+	display: inline-block;
+	margin: .25em;
 }
 
 .cardcont {
-	text-align: center ;
-	max-width: 700px ;
-	margin: auto ;
+	text-align: center;
+	max-width: 700px;
+	margin: auto;
 }
 
 .cardtop img {
-	max-width: 100% ;
+	max-width: 100%;
+	border-radius: 6px;
 }
 
 .card img {
-	max-width: 100% ;
-	max-height: 300px ;
+	max-width: 100%;
+	max-height: 300px;
+	border-radius: 6px;
 }
 
 .minicard {
-	max-width: 150px ;
-	display: inline ;
-	text-align: left ;
+	max-width: 150px;
+	display: inline;
+	text-align: left;
 	padding: 0;
 	margin: 0;
 }
 
 .minicard img {
 	max-width: 150px;
-	max-height: 100% ;
+	max-height: 100%;
+	border-radius: 4px;
 }
 
-hr { clear: both }
+hr {
+	clear: both;
+	border: none;
+	border-top: 1px solid #ccc;
+	margin: 2em 0;
+}
 
 .column {
 	float: left;
-	padding 10px ;
-
-	box-sizing: border-box ;
-	width: 100% ;
+	padding: 10px;
+	box-sizing: border-box;
+	width: 100%;
 }
 
 @media (min-width: 1000px) {
 	.column {
 		max-width: 50%;
 	}
-	.resright, .profile{
-		display: block ;
+	.resright, .profile {
+		display: block;
 		float: right;
-		clear: both ;
-		padding: 10px ;
-		max-width: 400px ;
+		clear: both;
+		padding: 10px;
+		max-width: 400px;
 	}
 }
+
 .taglist {
-	max-width: 400px ;
-	margin: auto ;
-	text-align: center ;
-	margin-bottom: 1em ;
+	max-width: 400px;
+	margin: auto;
+	text-align: center;
+	margin-bottom: 1em;
 }
 

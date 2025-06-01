@@ -16,7 +16,6 @@
       justify-content: flex-start;
       align-items: center;
       padding: 1rem;
-      /* no background */
     }
 
     header a {
@@ -33,22 +32,25 @@
       text-shadow: 0 0 5px rgba(0,0,0,0.9);
     }
 
-    h2,
-    h3,
-    h4, h5, h6 {
-      max-width: 800px;
-      margin: 1rem auto 1rem 0;  /* margine: sopra 1rem, destra auto, sotto 1rem, sinistra 0 */
-      padding-bottom: 0.3em;
-      border-bottom: 2px solid rgba(107, 88, 104, 0.5); /* viola ulivo trasparente */
-      text-align: left; /* allinea il testo a sinistra */
-    }
-
     h1.post-title {
       font-size: 2.2rem;
+      margin: 1rem auto 1rem auto;
+      max-width: 800px;
+      text-align: center;
       color: #6b5868;
       font-family: 'Inter', 'Roboto', Arial, sans-serif;
       font-weight: 700;
       text-shadow: 0 0 4px rgba(0,0,0,0.85);
+      padding-bottom: 0.3em;
+      border-bottom: none; /* niente barra sotto */
+    }
+
+    h2, h3, h4, h5, h6 {
+      max-width: 800px;
+      margin: 1rem 0 1rem 0;
+      padding-bottom: 0.3em;
+      border-bottom: 2px solid rgba(107, 88, 104, 0.5);
+      text-align: left;
     }
 
     h2 {
