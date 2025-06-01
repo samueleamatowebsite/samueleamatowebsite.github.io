@@ -2,7 +2,6 @@
 <html lang="en">
 <head>
   <link rel="icon" href="{{ '/favicon.ico' | relative_url }}" type="image/x-icon" />
-  <!-- ... resto head ... -->
   <style>
     body {
       font-family: 'Inter', 'Roboto', Arial, sans-serif;
@@ -37,7 +36,7 @@
 
     header a {
       font-weight: 700;
-      color: #6b5868; /* viola-ulivo base */
+      color: #fabd2f; /* colore giallo-arancio */
       text-decoration: none;
       font-size: 1.1rem;
       transition: color 0.3s ease;
@@ -47,7 +46,7 @@
     }
 
     header a:hover {
-      color: #8a7293;
+      color: #d1a91a;
       text-shadow: 0 0 5px rgba(0,0,0,0.9);
     }
 
@@ -56,12 +55,12 @@
       margin: 1rem auto 1rem auto;
       max-width: 800px;
       text-align: center;
-      color: #6b5868;
+      color: #fabd2f;
       font-family: 'Inter', 'Roboto', Arial, sans-serif;
       font-weight: 700;
       text-shadow: 0 0 4px rgba(0,0,0,0.85);
       padding-bottom: 0.3em;
-      border-bottom: none; /* niente barra sotto */
+      border-bottom: none;
       position: relative;
       z-index: 1;
     }
@@ -70,25 +69,11 @@
       max-width: 800px;
       margin: 1rem 0 1rem 0;
       padding-bottom: 0.3em;
-      border-bottom: 2px solid rgba(107, 88, 104, 0.5);
+      border-bottom: 2px solid rgba(250, 189, 47, 0.5);
       text-align: left;
+      color: #fabd2f;
       position: relative;
       z-index: 1;
-    }
-
-    h2 {
-      color: #7d6b81; /* viola-ulivo medio */
-      font-weight: 600;
-      margin-top: 2rem;
-    }
-
-    h3 {
-      color: #9a879a; /* viola-ulivo più chiaro */
-      font-weight: 600;
-    }
-
-    h4, h5, h6 {
-      color: #b4a4b2; /* tonalità più soft */
     }
 
     main {
@@ -135,16 +120,22 @@
     let particles = [];
     const particleCount = 70;
 
-    // Palette colori h1-h6 dal tuo stylesheet
+    // Palette più ampia di colori (tonalità gruvbox + giallo-arancio)
     const colorPalette = [
-      '#6b5868', // h1
-      '#7d6b81', // h2
-      '#9a879a', // h3
-      '#b4a4b2', // h4-h6
+      '#6b5868', // viola-ulivo base (vecchio h1)
+      '#7d6b81', // viola-ulivo medio (vecchio h2)
+      '#9a879a', // viola-ulivo più chiaro (vecchio h3)
+      '#b4a4b2', // tonalità più soft (vecchio h4-h6)
+      '#fabd2f', // giallo-arancio (colore h fisso)
+      '#d79921', // giallo-gruvbox scuro
+      '#b57614', // giallo-arancio più scuro
+      '#f2e5bc'  // beige chiaro gruvbox
     ];
 
-    // Scegli colore random per questa sessione dal palette
-    const baseColor = colorPalette[Math.floor(Math.random() * colorPalette.length)];
+    // Funzione per ottenere un colore random da palette
+    function getRandomColor() {
+      return colorPalette[Math.floor(Math.random() * colorPalette.length)];
+    }
 
     function resize() {
       width = window.innerWidth;
@@ -167,6 +158,7 @@
         this.vx = (Math.random() - 0.5) * 0.5;
         this.vy = (Math.random() - 0.5) * 0.5;
         this.radius = 2;
+        this.color = getRandomColor();
       }
 
       move() {
@@ -179,7 +171,7 @@
 
       draw() {
         ctx.beginPath();
-        ctx.fillStyle = hexToRGBA(baseColor, 0.8);
+        ctx.fillStyle = hexToRGBA(this.color, 0.8);
         ctx.arc(this.x, this.y, this.radius, 0, Math.PI * 2);
         ctx.fill();
       }
@@ -206,7 +198,9 @@
           const dist = Math.sqrt(dx * dx + dy * dy);
 
           if (dist < maxDist) {
-            ctx.strokeStyle = hexToRGBA(baseColor, 1 - dist / maxDist);
+            // Scegli colore random per ogni linea da palette
+            const lineColor = getRandomColor();
+            ctx.strokeStyle = hexToRGBA(lineColor, 1 - dist / maxDist);
             ctx.lineWidth = 1;
             ctx.beginPath();
             ctx.moveTo(particles[i].x, particles[i].y);
