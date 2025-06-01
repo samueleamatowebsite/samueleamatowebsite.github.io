@@ -1,127 +1,117 @@
 body {
-	background: #121212; /* nero profondo, moderno */
-	color: #e0e0e0; /* testo chiaro ma non bianco puro */
-	margin-bottom: 200px;
-	font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+	background: #1b1b1b ;
+	color: #fff ;
+	margin-bottom: 200px ;
+	font-family: "Garamond", Georgia, serif, 'Noto Color Emoji', 'Apple Color Emoji', 'Segoe UI Emoji' ;
 }
 
 h1 {
-	color: #1abc9c; /* verde acqua acceso */
+	color: chocolate ;
 }
 h2 {
-	color: #16a085; /* verde acqua più scuro */
+	color: sandybrown ;
 }
 h3 {
-	color: #27ae60; /* verde brillante */
+	color: tan ;
 }
 h4 {
-	color: #2ecc71; /* verde chiaro */
+	color: wheat ;
 }
-h5, h6 {
-	color: #48c9b0; /* verde acqua tenue */
-}
+h5, h6 { color: cornsilk ; }
 
 strong {
-	color: #1abc9c; /* stesso verde acqua acceso */
+	color: wheat ;
 }
 
 a {
-	color: #3498db; /* blu vivace */
-	text-decoration: none;
-	transition: color 0.3s ease;
+	color: #33bbff ;
+	text-decoration: none ;
 }
 
 a:hover {
-	color: #2980b9; /* blu più scuro al passaggio */
+	color: goldenrod ;
 }
 
-/* Il resto rimane invariato */
-
 .titleimg {
-	text-align: center;
+	align: center ;
 }
 
 .titleimg img {
-	margin: auto;
-	max-width: 90%;
-	max-height: 400px;
-	display: block;
+	margin: auto ;
+	max-width: 90% ;
+	max-height: 400px ;
+	display: block ;
 }
 
 .years img {
-	margin: auto;
-	max-width: 90%;
-	max-height: 400px;
-	display: block;
+	margin: auto ;
+	max-width: 90% ;
+	max-height: 400px ;
+	display: block ;
 }
 
 figcaption {
-	text-align: center;
-	font-style: italic;
-	color: #7f8c8d; /* grigio azzurro scuro */
+	text-align: center ;
+	font-style: italic ;
 }
 
 .lw, dt img, dd img, p img, li img, h1 img, h2 img, h3 img, h4 img, dt img, td img, button img {
 	max-height: .8em;
 	max-width: 1em;
-	vertical-align: middle;
+	vertical-align: middle ;
 }
 
 .loc {
-	display: none;
-	color: #555; /* grigio scuro */
+	display: none ;
+	color: #777 ;
 }
 
 .copies, .volumes {
-	color: #555;
+	color: #777 ;
 }
 
-h1, h2, h3, h4, h5, h6 {
-	text-align: center;
-	clear: both;
+
+h1,h2,h3,h4,h5,h6 {
+	text-align: center ;
+	clear: both ;
 }
 
 header {
-	text-align: center;
-	font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-	padding-bottom: 15pt;
-	color: #1abc9c;
+	text-align: center ;
+	font-family: "Fira Sans",sans ;
+	padding-bottom: 15pt ;
 }
 header h1 {
-	font-size: 30pt;
-	margin-bottom: 0;
+	font-size: 30pt ;
+	margin-bottom: 0 ;
 }
 header h2 {
-	margin-top: 0;
-	font-style: italic;
-	padding: .5em;
-	color: #16a085;
+	margin-top: 0 ;
+	font-style: italic ;
+	padding: .5em ;
 }
 main {
-	max-width: 1000px;
-	margin: auto;
+	max-width: 1000px ;
+	margin: auto ;
 }
 
 footer {
-	max-width: 600px;
-	margin-left: auto;
-	margin-right: auto;
-	text-align: center;
-	clear: both;
-	color: #7f8c8d;
+	max-width: 600px ;
+	margin-left: auto ;
+	margin-right: auto ;
+	text-align: center ;
+	clear: both ;
 }
 sup {
 	vertical-align: top;
 	font-size: 0.6em;
-	color: #7f8c8d;
 }
 
 #TableOfContents li {
-	text-align: center;
-	font-size: large;
-	display: block;
-	font-variant: small-caps;
-	color: #16a085;
+	text-align: center ;
+	font-size: large ;
+	display: block ;
+	font-variant: small-caps ;
 }
 
 #TableOfContents ul {
@@ -130,164 +120,133 @@ sup {
 }
 
 #TableOfContents li li {
-	font-size: small;
-	font-variant: none;
-	color: #7f8c8d;
+	font-size: small ;
+	font-variant: none ;
 }
 
 code {
-	color: #f39c12; /* arancione caldo */
-	background-color: #2c3e50;
-	padding: 2px 4px;
-	border-radius: 3px;
+	color: lime ;
 }
 
 .resright {
-	margin: auto;
-	display: block;
-	text-align: center;
-	max-width: 100%;
+    margin: auto ;
+    display: block ;
+    text-align: center ;
+    max-width: 100% ;
 }
 .resright img {
-	max-height: 400px;
+	max-height: 400px ;
 }
 
 nav ul {
-	list-style: none;
-	text-align: center;
-	padding-left: 0;
+	list-style: none ;
+	text-align: center ;
+	padding-left: 0 ;
 }
 
 nav ul li {
-	display: inline;
-	margin: .25em;
+	display: inline ;
+	margin: .25em ;
 }
 
 nav {
-	border-bottom: 1px #34495e dotted;
-	width: 100%;
+	border-bottom: 1px #ccc dotted ;
+	width: 100% ;
 }
 
 .imgfig {
-	text-align: center;
+	text-align: center ;
 }
 
 .rounded img {
-	border-radius: 8px; /* angoli arrotondati */
+	border-radius: 50% ;
 }
 
 .maintab {
-	margin: auto;
-	max-width: 600px;
-	border: solid #16a085 2px; /* bordo verde acqua */
-	border-radius: 8px;
-	background-color: #1e272e; /* blu scuro */
-	color: #e0e0e0;
+	margin: auto ;
+	max-width: 600px ;
+	border: solid darkred 2px ;
 }
-.maintab a {
-	display: block;
-	width: 100%;
-	color: #1abc9c;
-	text-decoration: none;
-	transition: color 0.3s ease;
-}
+.maintab a { display: block; width: 100% }
 
 .maintab tr td:first-child {
-	font-size: x-large;
-	color: #1abc9c;
+	font-size: x-large ;
 }
-td, th {
-	padding: .5em;
-	max-width: 500px;
-	border: solid #34495e 1px;
-	border-collapse: collapse;
-	color: #e0e0e0;
+td,th {
+	padding: .5em ;
+	max-width: 500px ;
+	border: solid gray 1px ;
+	border-collapse: collapse
 }
-.maintab td:nth-child(1) {
-	font-size: large;
-	color: #16a085;
+.maintab td:nth-child(1){
+	font-size: large ;
 }
 
 .card {
-	max-width: 250px;
-	margin: auto;
-	float: right;
-	clear: both;
-	background: #1e272e;
-	border-radius: 12px;
-	box-shadow: 0 4px 12px rgb(0 0 0 / 0.6);
-	padding: 1em;
-	color: #e0e0e0;
+	max-width: 250px ;
+	margin: auto ;
+	float: right ;
+	clear: both ;
 }
 
 .cardtop {
-	max-width: 100px;
-	display: inline-block;
-	margin: .25em;
+	max-width: 100px ;
+	display: inline-block ;
+	margin: .25em ;
 }
 
 .cardcont {
-	text-align: center;
-	max-width: 700px;
-	margin: auto;
+	text-align: center ;
+	max-width: 700px ;
+	margin: auto ;
 }
 
 .cardtop img {
-	max-width: 100%;
-	border-radius: 8px;
+	max-width: 100% ;
 }
 
 .card img {
-	max-width: 100%;
-	max-height: 300px;
-	border-radius: 8px;
+	max-width: 100% ;
+	max-height: 300px ;
 }
 
 .minicard {
-	max-width: 150px;
-	display: inline;
-	text-align: left;
+	max-width: 150px ;
+	display: inline ;
+	text-align: left ;
 	padding: 0;
 	margin: 0;
 }
 
 .minicard img {
 	max-width: 150px;
-	max-height: 100%;
-	border-radius: 6px;
+	max-height: 100% ;
 }
 
-hr {
-	clear: both;
-	border: none;
-	border-top: 1px solid #34495e;
-	margin: 2em 0;
-}
+hr { clear: both }
 
 .column {
 	float: left;
-	padding: 10px;
-	box-sizing: border-box;
-	width: 100%;
+	padding 10px ;
+	box-sizing: border-box ;
+	width: 100% ;
 }
 
 @media (min-width: 1000px) {
 	.column {
 		max-width: 50%;
 	}
-	.resright, .profile {
-		display: block;
+	.resright, .profile{
+		display: block ;
 		float: right;
-		clear: both;
-		padding: 10px;
-		max-width: 400px;
+		clear: both ;
+		padding: 10px ;
+		max-width: 400px ;
 	}
 }
-
 .taglist {
-	max-width: 400px;
-	margin: auto;
-	text-align: center;
-	margin-bottom: 1em;
+	max-width: 400px ;
+	margin: auto ;
+	text-align: center ;
+	margin-bottom: 1em ;
 }
-
