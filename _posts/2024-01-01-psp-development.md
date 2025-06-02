@@ -13,11 +13,14 @@ All these features make the PSP stand out till now.
 
 Writing software for the PSP was mostly **fun**. It is not just that I have always been desirous of creating something which does not run only on a PC or 
 smartphone, infact PSP was perfect to offer me the chance. To develop for the PSP is an exclusive challenge demanding creativity and technical competence 
-and the result is more rewarding than what you get from common platforms. The prospect of understanding how PSP hardware works and optimizing code so 
+and the result is more rewarding than what you get from common platforms. 
+
+The prospect of understanding how PSP hardware works and optimizing code so 
 as to make it run efficiently on this device was very thrilling and educational at the same time. In addition, it enabled me understand the basics of 
 Lua programming language. Lua is easy to learn, lightweight high-level scripting language that has powerful applications especially in game development. 
-Using Lua on my PSP made me realize its simplicity and flexibility hence opened a way into future undertakings. Beyond coding, however, this project sought 
-to expand the bounds of what can be done with this classic portable system. 
+Using Lua on my PSP made me realize its simplicity and flexibility hence opened a way into future undertakings. 
+
+Beyond coding, however, this project sought to expand the bounds of what can be done with this classic portable system. 
 
 ## What I Did
 
