@@ -1,111 +1,12 @@
 ---
 ---
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Samuele Amato</title>
-<style>
-  body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    background: #282828; /* Gruvbox dark background */
-    color: #ebdbb2; /* Gruvbox light fg */
-  }
-  main {
-    max-width: 1000px;
-    margin: 2em auto;
-    padding: 0 1em;
-    position: relative;
-    z-index: 1;
-  }
-  h1, h2 {
-    color: #fabd2f;
-    margin-bottom: 0.5em;
-  }
-  a {
-    color: #83a598;
-    text-decoration: none;
-  }
-  a:hover {
-    text-decoration: underline;
-  }
-  table {
-    width: 100%;
-    border-collapse: collapse;
-    margin-top: 0.5em;
-  }
-  td {
-    padding: 0.5em;
-    border-bottom: 1px solid #3c3836;
-  }
-  /* Flex container for profile */
-  .profile {
-    display: flex;
-    align-items: center;
-    gap: 1.5em;
-    margin-bottom: 2em;
-  }
-  .profile img {
-    border-radius: 0%;
-    width: 170px;
-    height: 170px;
-    object-fit: cover;
-    flex-shrink: 0;
-  }
-  .profile-description {
-    flex: 1;
-    font-size: 1.1em;
-    line-height: 1.4;
-  }
-  /* Flex container for 2 columns below */
-  .columns-2 {
-    display: flex;
-    gap: 2em;
-    justify-content: space-between;
-  }
-  .left-column, .right-column {
-    flex: 1;
-    min-width: 280px;
-  }
-  .left-column > section {
-    margin-bottom: 2em;
-  }
-  /* Posts list styling */
-  ul.posts-list {
-    list-style: none;
-    padding-left: 0;
-    margin-top: 0.3em;
-  }
-  ul.posts-list li {
-    margin-bottom: 1em;
-    font-size: 0.95em;
-  }
-  ul.posts-list li small {
-    color: #bdae93;
-  }
-  /* Canvas styles */
-  #particle-canvas {
-    position: fixed;
-    top: 0; left: 0;
-    width: 100vw;
-    height: 100vh;
-    pointer-events: none;
-    z-index: 0;
-    background: transparent;
-  }
-  /* Responsive adjustments */
-  @media (max-width: 850px) {
-    .columns-2 {
-      flex-direction: column;
-    }
-    .left-column, .right-column {
-      min-width: auto;
-    }
-  }
-</style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Samuele Amato | Home</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
@@ -158,20 +59,19 @@
     </div>
 
     <div class="right-column">
-<section>
-  <h2>My Posts</h2>
-  <ul class="posts-list">
-    {% for post in site.posts %}
-      <li>
-        <span>{{ post.date | date: "%Y-%m-%d" }}</span>
-        &nbsp;
-        <a href="{{ post.url }}">{{ post.title }}</a><br />
-        <small>{{ post.excerpt | truncate: 100 }}</small>
-      </li>
-    {% endfor %}
-  </ul>
-</section>
-
+      <section>
+        <h2>My Posts</h2>
+        <ul class="posts-list">
+          {% for post in site.posts %}
+            <li>
+              <span>{{ post.date | date: "%Y-%m-%d" }}</span>
+              &nbsp;
+              <a href="{{ post.url }}">{{ post.title }}</a><br />
+              <small>{{ post.excerpt | truncate: 100 }}</small>
+            </li>
+          {% endfor %}
+        </ul>
+      </section>
     </div>
   </section>
 </main>
@@ -184,23 +84,12 @@
   let particles = [];
   const particleCount = 70;
 
-  // Palette Gruvbox completa: light e dark (più colori)
   const gruvboxColors = [
-    '#fb4934', // red
-    '#b16286', // dark purple
-    '#d3869b', // light purple
-    '#fabd2f', // yellow
-    '#b8bb26', // green
-    '#8ec07c', // light green
-    '#83a598', // blue
-    '#458588', // dark blue
-    '#fe8019', // orange
-    '#d79921', // brown/gold
-    '#928374', // gray
-    '#a89984', // light gray/beige
+    '#fb4934', '#b16286', '#d3869b', '#fabd2f', '#b8bb26',
+    '#8ec07c', '#83a598', '#458588', '#fe8019',
+    '#d79921', '#928374', '#a89984'
   ];
 
-  // Ogni refresh sceglie un colore random tra tutti quelli nella palette
   const baseColor = gruvboxColors[Math.floor(Math.random() * gruvboxColors.length)];
 
   function resize() {
@@ -229,7 +118,6 @@
     move() {
       this.x += this.vx;
       this.y += this.vy;
-
       if (this.x < 0 || this.x > width) this.vx *= -1;
       if (this.y < 0 || this.y > height) this.vy *= -1;
     }
@@ -255,13 +143,11 @@
 
   function drawLines() {
     const maxDist = 120;
-
     for (let i = 0; i < particles.length; i++) {
       for (let j = i + 1; j < particles.length; j++) {
         const dx = particles[i].x - particles[j].x;
         const dy = particles[i].y - particles[j].y;
         const dist = Math.sqrt(dx * dx + dy * dy);
-
         if (dist < maxDist) {
           ctx.strokeStyle = hexToRGBA(baseColor, 1 - dist / maxDist);
           ctx.lineWidth = 1;
@@ -276,20 +162,16 @@
 
   function animate() {
     ctx.clearRect(0, 0, width, height);
-
     particles.forEach(p => {
       p.move();
       p.draw();
     });
-
     drawLines();
-
     requestAnimationFrame(animate);
   }
 
   animate();
 </script>
-
 
 </body>
 </html>
