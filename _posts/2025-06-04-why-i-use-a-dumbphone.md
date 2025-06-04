@@ -37,17 +37,17 @@ Do I really need to explain this? When you don’t have a smartphone within reac
 
 Technical benefits refer to the practical and functional features of the dumbphone. Paradoxically, going back actually offers more advantages than moving forward.
 
-#### Battery Lasts 3 Days (Not 3 Hours)
+### Battery Lasts 3 Days (Not 3 Hours)
 
 Although it may sound trivial, it’s worth emphasizing: the battery life of a dumbphone is LEGENDARY. You literally only need to charge it once every three days at most, and charging takes very little time. Plus, removable batteries are super convenient if you want to be sure you never run out of power.
 
-#### Privacy
+### Privacy
 
 For me, this could fit under mental benefits, but it’s more appropriate here. It’s no secret that most apps these days (all for some people) collect data to exploit or sell it. Personally, I’m very pragmatic about privacy ,there’s no freedom without privacy, and there’s no real freedom with a smartphone. 
 
 Nowadays, it’s incredibly hard to have a smartphone that truly keeps your activities private, especially with Google’s digital signature system making rooted devices unusable. In this context, a dumbphone is perfect ,it has no GPS, no Wi-Fi, nothing that tracks you.
 
-#### Minimal and Functional Design
+### Minimal and Functional Design
 
 All dumbphones have small screens and simple buttons. From a software perspective, there’s not much to say. This is actually a delicate topic, as the definition of dumbphone is still debated. Some say a phone with WhatsApp but all other dumbphone features counts, others disagree. Personally, I believe even a simple messaging app like WhatsApp ruins the true experience a dumbphone offers. When using a dumbphone, everything is simpler, more straightforward. If you need to reach someone, you call them directly instead of writing a message and waiting for a reply ,and they do the same with you.
 
