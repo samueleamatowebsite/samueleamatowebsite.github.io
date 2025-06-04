@@ -7,7 +7,8 @@ Imagine living in 2025 without notifications, without constant updates. While ev
 
 ## Why?
 
-When talking about reasons why someone should switch to a dumbphone, I believe we need to separate two types of benefits: technical and mental. The technical benefits relate to the device’s productivity and efficiency, while the human benefits are connected to us as humans ,beings who can easily get distracted and lose hours watching content we don’t even care about.
+When talking about reasons why someone should switch to a dumbphone, I believe we need to separate two types of benefits: technical and mental. The technical benefits relate to the device’s productivity and efficiency, while the human benefits are connected to us as humans-beings who can easily get distracted and lose hours watching content we don’t even care about.
+
 
 ## Mental Benefits
 Mental benefits improve the quality of our attention, reduce cognitive overload, and allow us to be more present throughout the day. Here are some of the most important mental benefits of using a dumbphone:
