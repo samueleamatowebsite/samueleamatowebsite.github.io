@@ -1,5 +1,5 @@
 ---
-title: "Why I Use a Dumbphone in 2025 (and Why You Should Too)""
+title: "Why I Use a Dumbphone in 2025 (and Why You Should Too)"
 date: 2025-06-04
 ---
 
