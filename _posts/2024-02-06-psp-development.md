@@ -1,6 +1,6 @@
 ---
 title: "My Experience with PSP Development"
-date: 2024-01-01
+date: 2024-02-06
 ---
 
 The console that has stayed with me even **twenty years** later is the **PlayStation Portable**. 
