@@ -20,7 +20,7 @@ With the rise of short-form content (TikTok, Instagram Shorts, YouTube Reels), i
     <img src="/assets/images/soglia_attenzione.jpg" width="600px">
 </div>
 
-As the chart shows, attention spans are plummeting. Today’s social media is like a drug, with the only difference being that it’s free.
+As the chart shows, attention spans are plummeting. Today’s social media is like a drug, with the only difference being that it’s """free""".
 
 ### Productivity
 One of the most surprising effects of switching to a dumbphone has been its direct impact on my productivity. Without notifications, constant messages, or the temptation to “just check something real quick,” I rediscovered how much real time there is in a day. 
