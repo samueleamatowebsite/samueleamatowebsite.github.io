@@ -107,5 +107,27 @@ ul.posts-list li small {
   .left-column, .right-column {
     min-width: auto;
   }
+
+.profile-description .profile-links {
+  display: inline-flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.6em;
+  margin-top: 0.8em;
+  font-size: 0.95em;
 }
+
+.profile-description .profile-links a {
+  color: #83a598;
+  text-decoration: none;
+}
+
+.profile-description .profile-links a:hover {
+  text-decoration: underline;
+}
+
+.profile-description .profile-links span {
+  color: #928374; /* colore neutro per i separatori */
+}
+
 
